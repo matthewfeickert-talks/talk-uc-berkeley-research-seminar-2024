@@ -9,9 +9,9 @@ count: false
 <br><br>
 [matthew.feickert@cern.ch](mailto:matthew.feickert@cern.ch)
 
-[SMU Physics Department Speaker Series](https://matthewfeickert-talks.github.io/talk-smu-seminar-2023/)
+[UC Berkeley Research Seminar](https://matthewfeickert-talks.github.io/talk-uc-berkeley-research-seminar-2024/)
 
-October 2nd, 2023
+January 30th, 2024
 
 <!-- ---
 # Notes
