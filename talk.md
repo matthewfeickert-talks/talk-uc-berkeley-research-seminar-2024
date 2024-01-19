@@ -88,6 +88,11 @@ January 30th, 2024
 ]
 
 ---
+# High Energy Physics at the LHC
+
+.bold[TODO: Add slide explaining what normal data is like?]
+
+---
 # Opportunities and Challenges of the HL-LHC
 <!--  -->
 <p style="text-align:center;">
@@ -97,6 +102,7 @@ January 30th, 2024
 </p>
 <!--  -->
 .large[
+**TODO: put these in normal language**
 * Increase in luminosity of roughly order of magnitude
    - $3$ - $4$ $\mathrm{ab}^{-1}$ (factor of 20-25 from Run-2 delivered)
 * Boon for measurements constrained by statistical uncertainties, searches for rare processes
