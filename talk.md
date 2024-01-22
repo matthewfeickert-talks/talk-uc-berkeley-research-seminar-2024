@@ -102,9 +102,8 @@ January 30th, 2024
 </p>
 <!--  -->
 .large[
-**TODO: put these in normal language**
 * Increase in data generating collision rate ("luminosity") of roughly order of magnitude
-   - $3$ - $4$ $\mathrm{ab}^{-1}$ (factor of 20-25 from Run-2 delivered)
+   - Factor of .bold[20-25] times ($3$ - $4$ $\mathrm{ab}^{-1}$) the amount of collisions delivered from Run-2 of the LHC
 * Boon for measurements constrained by statistical uncertainties, searches for rare processes
 ]
 
