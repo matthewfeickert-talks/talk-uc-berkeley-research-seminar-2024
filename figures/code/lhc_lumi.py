@@ -1,5 +1,7 @@
-import matplotlib.pyplot as plt
+import itertools
 from pathlib import Path
+
+import matplotlib.pyplot as plt
 
 # XKCD style
 plt.xkcd()
@@ -20,31 +22,30 @@ run_two_color = "orange"
 run_three_color = "gold"
 run_four_color = "grey"
 
-for row in range(n_rows):
-    for col in range(n_cols):
-        if row == 0 and col == 0:
-            facecolor = run_one_color
-        elif row == 0 and col > 0:
-            facecolor = run_two_color
-        elif row == 1 and col == 0:
-            facecolor = run_two_color
-        elif row == 1 and col > 0:
-            facecolor = run_three_color
-        elif row == 2:
-            facecolor = run_three_color
-        elif row == 3 and col == 0:
-            facecolor = run_three_color
-        else:
-            facecolor = run_four_color
-        square = plt.Rectangle(
-            (col, n_rows - row - 1),
-            1,
-            1,
-            fill=True,
-            facecolor=facecolor,
-            edgecolor="black",
-        )
-        ax.add_patch(square)
+for row, col in itertools.product(range(n_rows), range(n_cols)):
+    if row == 0 and col == 0:
+        facecolor = run_one_color
+    elif row == 0 and col > 0:
+        facecolor = run_two_color
+    elif row == 1 and col == 0:
+        facecolor = run_two_color
+    elif row == 1 and col > 0:
+        facecolor = run_three_color
+    elif row == 2:
+        facecolor = run_three_color
+    elif row == 3 and col == 0:
+        facecolor = run_three_color
+    else:
+        facecolor = run_four_color
+    square = plt.Rectangle(
+        (col, n_rows - row - 1),
+        1,
+        1,
+        fill=True,
+        facecolor=facecolor,
+        edgecolor="black",
+    )
+    ax.add_patch(square)
 
 ax.add_patch(
     plt.Rectangle(
