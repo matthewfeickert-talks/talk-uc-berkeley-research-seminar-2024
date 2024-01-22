@@ -125,4 +125,6 @@ ax.set_xticklabels([])
 ax.set_yticklabels([])
 
 figure_dir_path = Path(__file__).parents[1]
-fig.savefig(figure_dir_path / "lhc_lumi.png", transparent=True, bbox_inches="tight")
+fig.savefig(
+    figure_dir_path / "lhc_lumi.png", transparent=True, bbox_inches="tight", dpi=300
+)
