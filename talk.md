@@ -96,7 +96,7 @@ January 30th, 2024
    - Would translate to ~ petabyte per second
    - Use real time data processing ("trigger") system to only keep potentially interesting collisions
    - Use further offline selections to reduce data stream even more
-* Translates to roughly .bold[90 petabytes] of collision data per year
+* Translates to roughly .bold[90 petabytes] of collision data recorded per year
 <!-- * LHC Run 2 produced data set 5x that used for the 2012 Higgs discovery -->
 * LHC data taking scheduled to continue for another roughly .bold[20 years]
    - Majority of data is yet to come!
@@ -104,8 +104,8 @@ January 30th, 2024
 ]
 .kol-2-5[
 <p style="text-align:center;">
-      <img src="figures/lhc_lumi.png"; width=90%>
-.center[Planned (HL-)LHC data collection]
+   <img src="figures/lhc_lumi.png"; width=90%>
+.center[Planned (HL-)LHC lifetime data collection]
 </p>
 ]
 
@@ -116,6 +116,22 @@ January 30th, 2024
    <a href="https://hilumilhc.web.cern.ch/content/hl-lhc-project">
       <img src="figures/HL-LHC_schedule.png"; width=75%>
    </a>
+</p>
+<!--  -->
+.large[
+* Increase in data generating collision rate ("luminosity") of roughly order of magnitude
+   - Factor of .bold[20-25] times ($3$ - $4$ $\mathrm{ab}^{-1}$) the amount of collisions delivered from Run-2 of the LHC
+* Boon for measurements constrained by statistical uncertainties, searches for rare processes
+]
+
+---
+# Opportunities and Challenges of the HL-LHC
+<!--  -->
+<p style="text-align:center;">
+   <a href="https://hilumilhc.web.cern.ch/content/hl-lhc-project">
+      <img src="figures/HL-LHC_schedule.png"; width=69%>
+   </a>
+   <img src="figures/lhc_lumi.png"; width=30%>
 </p>
 <!--  -->
 .large[
