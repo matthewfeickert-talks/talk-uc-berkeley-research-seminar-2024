@@ -92,7 +92,7 @@ January 30th, 2024
 
 .kol-3-5[
 .large[
-* LHC beam crossing at experiments every .bold[25 ns] (.bold[40 MHz] collisions)
+* LHC beam crossing at experiments every .bold[25 ns] <br>(.bold[40 MHz] collisions)
    - Would translate to ~ petabyte per second
    - Use real time data processing ("trigger") system to only keep potentially interesting collisions
    - Use further offline selections to reduce data stream even more
