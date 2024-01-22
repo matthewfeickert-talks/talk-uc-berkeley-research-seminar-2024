@@ -90,7 +90,24 @@ January 30th, 2024
 ---
 # High Energy Physics at the LHC
 
-.bold[TODO: Add slide explaining what normal data is like?]
+.kol-3-5[
+.large[
+* LHC beam crossing at experiments every .bold[25 ns] (.bold[40 MHz] collisions)
+   - Would translate to ~ petabyte per second
+   - Use real time data processing ("trigger") system to only keep potentially interesting collisions
+   - Use further offline selections to reduce data stream even more
+* Translates to roughly .bold[90 petabytes] of collision data per year
+<!-- * LHC Run 2 produced data set 5x that used for the 2012 Higgs discovery -->
+* LHC data taking scheduled to continue for another roughly .bold[20 years]
+   - Majority of data is yet to come!
+]
+]
+.kol-2-5[
+<p style="text-align:center;">
+      <img src="figures/lhc_lumi.png"; width=90%>
+.center[Planned (HL-)LHC data collection]
+</p>
+]
 
 ---
 # Opportunities and Challenges of the HL-LHC
