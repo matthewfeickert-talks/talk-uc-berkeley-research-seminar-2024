@@ -103,7 +103,7 @@ January 30th, 2024
 <!--  -->
 .large[
 **TODO: put these in normal language**
-* Increase in luminosity of roughly order of magnitude
+* Increase in data generating collision rate ("luminosity") of roughly order of magnitude
    - $3$ - $4$ $\mathrm{ab}^{-1}$ (factor of 20-25 from Run-2 delivered)
 * Boon for measurements constrained by statistical uncertainties, searches for rare processes
 ]
@@ -117,11 +117,10 @@ January 30th, 2024
    <a href="https://cds.cern.ch/record/2803119?ln=en">
       <img src="figures/HL-LHC-cpu-projections-atlas.png"; width=50%>
    </a>
+.center[[ATLAS software and computing review](https://cds.cern.ch/record/2803119?ln=en)]
 </p>
 
 .center.large[Projected .bold[required compute usage] for HL-LHC (want R&D below budget line)]
-
-.center[[ATLAS software and computing review](https://cds.cern.ch/record/2803119?ln=en)]
 
 ---
 # IRIS-HEP
