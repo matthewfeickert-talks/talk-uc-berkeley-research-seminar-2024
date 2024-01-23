@@ -593,10 +593,10 @@ $$
 .kol-1-2.large[
 - Open source tool for all of HEP
    - [IRIS-HEP](https://iris-hep.org/projects/pyhf.html) supported Scikit-HEP project
-   - Used in ATLAS SUSY, Exotics, and Top groups in [25 published analyses](https://scikit-hep.org/pyhf/citations.html#published-statistical-models) (inference and published models)
-   - Used by Belle II<br>(DOI: [10.1103/PhysRevLett.127.181802](https://inspirehep.net/literature/1860766)) and MicroBooNE ([upcoming results](https://indico.cern.ch/event/1261135/contributions/5333609/))
-   - Used in [analyses and for reinterpretation](https://scikit-hep.org/pyhf/citations.html#use-citations) by phenomenology community, `SModelS` <br>(DOI: [10.1016/j.cpc.2021.107909](https://inspirehep.net/literature/1814793)), and `MadAnalysis 5` ([arXiv:2206.14870](https://inspirehep.net/literature/2103971))
-   - Maybe your experiment too!
+   - Used in ATLAS SUSY, Exotics, and Top groups in [28 published analyses](https://scikit-hep.org/pyhf/citations.html#published-statistical-models) (inference and published models)
+   - Used by flavor physics (Belle II, <br>DOI: [10.1103/PhysRevLett.127.181802](https://inspirehep.net/literature/1860766)) and neutrino physics <br>(MicroBooNE, [arXiv:2310.07660](https://arxiv.org/abs/2310.07660))
+   - Used in [analyses and for reinterpretation](https://scikit-hep.org/pyhf/citations.html#use-citations) by phenomenology community (`SModelS`, <br>DOI: [10.1016/j.cpc.2021.107909](https://inspirehep.net/literature/1814793), `MadAnalysis 5`, [arXiv:2206.14870](https://inspirehep.net/literature/2103971))
+   - Expanding to future experiments too!
 ]
 
 ---
