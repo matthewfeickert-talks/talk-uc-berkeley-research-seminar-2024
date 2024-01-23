@@ -93,9 +93,9 @@ January 30th, 2024
 .kol-3-5[
 .large[
 * LHC beam crossing at experiments every .bold[25 ns] <br>(.bold[40 MHz] collisions)
-   - Would translate to ~ petabyte per second
+   - Would translate to ~ petabyte per second ⚠️
    - Use real time data processing ("trigger") system to only keep potentially interesting collisions
-   - Use further offline selections to reduce data stream even more
+   - Use further physics specific offline selections to reduce data stream even more
 * Translates to roughly .bold[90 petabytes] of collision data recorded per year
 <!-- * LHC Run 2 produced data set 5x that used for the 2012 Higgs discovery -->
 * LHC data taking scheduled to continue for another roughly .bold[20 years]
