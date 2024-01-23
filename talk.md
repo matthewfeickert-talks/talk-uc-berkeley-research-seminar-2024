@@ -152,7 +152,7 @@ January 30th, 2024
 .center[[ATLAS software and computing review](https://cds.cern.ch/record/2803119?ln=en)]
 </p>
 
-.center.large[Projected .bold[required compute usage] for HL-LHC (want R&D below budget line)]
+.center.large[Projected .bold[required compute usage] for HL-LHC (want .blue[R]&.red[D] below .black[budget] line)]
 
 ---
 # IRIS-HEP
