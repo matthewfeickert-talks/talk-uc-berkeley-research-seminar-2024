@@ -24,7 +24,7 @@ January 30th, 2024
 
 .kol-2-3[
 .huge[
-* Privileged opportunity to work among multiple scientific communities
+* As a "data physicist" have privileged opportunity to work among multiple scientific communities
 * Care about .bold[reusable] open science to be able to push particle physics forward at the .bold[community scale]
    - The challenges of the next decade provide wonderful research environments that will require interdisciplinary knowledge exchange to fully attack
 * Today we'll share .bold[high level] views of deeply .bold[technical problems]
@@ -1043,6 +1043,11 @@ Leveraging [REANA](https://www.reana.io/) reproducible research data analysis pl
 * Engagement with the broader scientific open source community
 * Planning for analysis reuse brings flexibility to leverage tooling
 ]
+
+---
+# Dedicated support for the next decade
+
+.bold[TODO: Add slide about P5 and funding for the next decade]
 
 ---
 # Summary
