@@ -188,7 +188,7 @@ supported by the National Science Foundation Cooperative Agreements [OAC-1836650
    <a href="https://iris-hep.org/about/team">
       <img src="figures/iris-hep-full-team.png"; width=90%>
    </a>
-.center[Distributed team of professional physicists, computer scientists, software developers, <br>research software engineers, professors, and Ph.D. students!]
+.center.large[Distributed team of professional physicists, computer scientists, software developers, <br>research software engineers, professors, and Ph.D. students!]
 </p>
 
 ---
@@ -277,7 +277,7 @@ In his [PyCon 2017 keynote](https://youtu.be/ZyjCqQEUa8o), Jake VanderPlas gave 
 </p>
 
 .center.large[
-In his [2022 PyHEP topical meeting update](https://indico.cern.ch/event/1140031/), Jim Pivarski gave us a view for the PyHEP ecosystem
+In [2022](https://indico.cern.ch/event/1140031/) we created a view for the PyHEP ecosystem
 ]
 
 ---
