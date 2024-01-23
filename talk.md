@@ -184,6 +184,16 @@ supported by the National Science Foundation Cooperative Agreements [OAC-1836650
 ---
 # IRIS-HEP
 
+<p style="text-align:center;">
+   <a href="https://iris-hep.org/about/team">
+      <img src="figures/iris-hep-full-team.png"; width=90%>
+   </a>
+.center[Distributed team of professional physicists, computer scientists, software developers, <br>research software engineers, professors, and Ph.D. students!]
+</p>
+
+---
+# IRIS-HEP
+
 .kol-1-1[
 .kol-1-2[
 .huge[
