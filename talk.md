@@ -573,29 +573,56 @@ $$
 $$
 
 .center[.bold[This is a _mathematical_ representation!] Nowhere is any software spec defined]
-.center[.bold[Until 2018] the only implementation of HistFactory has been in [`ROOT`](https://root.cern.ch/)]
+.center[.bold[Until 2018] the only implementation of HistFactory was in `C++` framework for physics analysis ([`ROOT`](https://root.cern.ch/))]
 
 .center.width-70[[![ROOT_HistFactory](figures/ROOT_HistFactory.png)](https://root.cern/doc/v628/group__HistFactory.html)]
 
 ---
 # `pyhf`: HistFactory in pure Python
-<!--  -->
+
+.kol-1-1[
 .kol-1-2.large[
-- First non-ROOT implementation of the HistFactory p.d.f. template
-   - .width-40[[![DOI](figures/zenodo.1169739.svg)](https://doi.org/10.5281/zenodo.1169739)]
+- First non-`C++`/ROOT implementation of the HistFactory p.d.f. template
+.width-40[[![DOI](figures/zenodo.1169739.svg)](https://doi.org/10.5281/zenodo.1169739)] .width-40[[![DOI](https://joss.theoj.org/papers/10.21105/joss.02823/status.svg)](https://doi.org/10.21105/joss.02823)]
 - pure-Python library as second implementation of HistFactory
   - [`$ python -m pip install pyhf`](https://scikit-hep.org/pyhf/installation.html#install-from-pypi)
-  - No dependence on ROOT!
-
-.center.width-100[[![pyhf_PyPI](figures/pyhf_PyPI.png)](https://pypi.org/project/pyhf/)]
+  <!-- - [`$ micromamba install -c conda-forge pyhf`](https://prefix.dev/channels/conda-forge/packages/pyhf) -->
+  - No dependence on large `C++` ROOT framework!
 ]
 .kol-1-2.large[
 - Open source tool for all of HEP
    - [IRIS-HEP](https://iris-hep.org/projects/pyhf.html) supported Scikit-HEP project
-   - Used in ATLAS SUSY, Exotics, and Top groups in [28 published analyses](https://scikit-hep.org/pyhf/citations.html#published-statistical-models) (inference and published models)
-   - Used by flavor physics (Belle II, <br>DOI: [10.1103/PhysRevLett.127.181802](https://inspirehep.net/literature/1860766)) and neutrino physics <br>(MicroBooNE, [arXiv:2310.07660](https://arxiv.org/abs/2310.07660))
-   - Used in [analyses and for reinterpretation](https://scikit-hep.org/pyhf/citations.html#use-citations) by phenomenology community (`SModelS`, <br>DOI: [10.1016/j.cpc.2021.107909](https://inspirehep.net/literature/1814793), `MadAnalysis 5`, [arXiv:2206.14870](https://inspirehep.net/literature/2103971))
-   - Expanding to future experiments too!
+   - Used in ATLAS SUSY, Exotics, and Top groups in [28 published analyses](https://scikit-hep.org/pyhf/citations.html#published-statistical-models)
+   - [Used by](https://scikit-hep.org/pyhf/citations.html#use-citations) flavor physics ([Belle II](https://inspirehep.net/literature/1860766)) and neutrino physics ([MicroBooNE](https://arxiv.org/abs/2310.07660)), phenomenology community ([`SModelS`](https://inspirehep.net/literature/1814793), [`MadAnalysis 5`](https://inspirehep.net/literature/2103971))
+   <!-- - Expanding to future experiments too! -->
+   - [![NumFOCUS Affiliated Project](https://img.shields.io/badge/NumFOCUS-Affiliated%20Project-orange.svg?style=flat&colorA=E1523D&colorB=007D8A)](https://numfocus.org/sponsored-projects/affiliated-projects)
+]
+]
+<!--  -->
+.kol-1-1[
+.kol-1-3.center[
+<p style="text-align:center;">
+   <a href="https://pypi.org/project/pyhf/">
+      <img src="figures/pyhf_PyPI.png"; width=100%>
+   </a>
+</p>
+]
+<!--  -->
+.kol-1-3.center[
+<p style="text-align:center;">
+   <a href="https://joss.theoj.org/papers/10.21105/joss.02823">
+      <img src="figures/pyhf-joss-paper.png"; width=75%>
+   </a>
+</p>
+]
+<!--  -->
+.kol-1-3.center[
+<p style="text-align:center;">
+   <a href="https://inspirehep.net/literature/1845084">
+      <img src="figures/inspire-citations-by-year.png"; width=82%>
+   </a>
+</p>
+]
 ]
 
 ---
