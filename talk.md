@@ -245,13 +245,12 @@ community engagement with .bold[training, education, and outreach] and .bold[ins
 
 <p style="text-align:center;">
    <a href="https://github.com/iris-hep/analysis-grand-challenge/blob/382e512d39e9b62fc4d9da2c69e454dfc718c5f6/docs/taskbackground.rst">
-      <img src="figures/iris-hep_agc_ml_pipeline.png"; width=80%>
+      <img src="figures/iris-hep_agc_ml_pipeline.png"; width=90%>
    </a>
 </p>
 
-.huge[
-* Integrating machine learning training and inference into analysis workflows
-   - c.f. [Machine Learning for Columnar High Energy Physics Analysis](https://indico.jlab.org/event/459/contributions/11692/), Elliott Kauffman, CHEP 2023
+.huge.center[
+Integrating [machine learning training and inference](https://indico.jlab.org/event/459/contributions/11692/) into analysis workflows
 ]
 
 ---
