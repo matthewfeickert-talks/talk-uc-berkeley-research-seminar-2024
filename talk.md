@@ -1076,9 +1076,39 @@ From the 2023 MIAPbP Workshop on on Differentiable and Probabilistic Programming
 ]
 
 ---
-# Dedicated investment for the next decade
+# Dedicated investment for the next decades
 
-.bold[TODO: Add slide about P5 and funding for the next decade]
+.bold.center.large[Exiting future for all these areas in particle physics with large scale investment!]
+
+.kol-1-3[
+<p style="text-align:center;">
+   <a href="https://www.usparticlephysics.org/2023-p5-report/">
+      <img src="figures/p5-theme.jpg"; width=100%>
+   </a>
+</p>
+
+.center[[Exploring the Quantum Universe<br>
+Report of the 2023 Particle Physics Project Prioritization Panel](https://www.usparticlephysics.org/2023-p5-report/)]
+
+.large[Once a decade formal recommendations from US particle physics community to .bold[US Congress and funding agencies]]
+]
+.kol-2-3[
+<p style="text-align:center;">
+   <a href="https://www.usparticlephysics.org/2023-p5-report/">
+      <img src="figures/p5-charge.png"; width=90%>
+   </a>
+</p>
+<p style="text-align:center;">
+   <a href="https://www.usparticlephysics.org/2023-p5-report/">
+      <img src="figures/p5-software-computing-chapter.png"; width=90%>
+   </a>
+</p>
+<p style="text-align:center;">
+   <a href="https://www.usparticlephysics.org/2023-p5-report/">
+      <img src="figures/p5-area-recommendation-18.png"; width=90%>
+   </a>
+</p>
+]
 
 ---
 # Applications beyond HEP
