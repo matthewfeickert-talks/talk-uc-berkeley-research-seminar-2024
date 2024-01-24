@@ -783,6 +783,9 @@ $$
 * Weight events using activation function of sigmoid
 
 .center[$w=\left(1 + e^{-\alpha(x-c)}\right)^{-1}$]
+
+* Event far .italic[below] cut: $w \to 0$
+* Event far .italic[above] cut: $w \to 1$
 ]
 .kol-1-3[
 <p style="text-align:center;">
@@ -901,6 +904,17 @@ Requires all operations to be differentiable
 ]
 
 ---
+# Scaling and Analysis Reuse
+
+<p style="text-align:center;">
+   <a href="https://iris-hep.org/as.html">
+      <img src="figures/cabinetry-vertical-slice.png"; width=80%>
+   </a>
+</p>
+
+.center[Revisiting .bold[IRIS-HEP Analysis Systems] in the context of distributed scaling and analysis reuse]
+
+---
 # Scaling is reasonable
 
 From the 2023 MIAPbP Workshop on on Differentiable and Probabilistic Programming for physics engagement with the broader community showed multiple large scale workflows
@@ -943,17 +957,6 @@ From the 2023 MIAPbP Workshop on on Differentiable and Probabilistic Programming
 ]
 
 ---
-# Scaling and Analysis Reuse
-
-<p style="text-align:center;">
-   <a href="https://iris-hep.org/as.html">
-      <img src="figures/cabinetry-vertical-slice.png"; width=80%>
-   </a>
-</p>
-
-.center[Revisiting .bold[IRIS-HEP Analysis Systems] in the context of distributed scaling and analysis reuse]
-
----
 # Analysis Reuse
 
 .large[
@@ -989,15 +992,87 @@ From the 2023 MIAPbP Workshop on on Differentiable and Probabilistic Programming
 ]
 
 ---
-# Publishing statistical models
+# Full statistical model publication...
 
-.bold[TODO: Add slide about impact of pyhf]
+.center[...making good on [19 year old agreement to publish likelihoods](https://indico.cern.ch/event/746178/contributions/3396797/)]
 
+.center.width-90[
+[![likelihood_publishing_agreement](figures/likelihood_publishing_agreement.png)](https://cds.cern.ch/record/411537)
+]
+
+.center[([1st Workshop on Confidence Limits, CERN, 2000](http://inspirehep.net/record/534129))]
+
+.bold[This hadn't been done in HEP until `pyhf` in 2019]
+- A "open world" of statistical models gives a difficult domain problem to solve
+- What to preserve and how? All of the ROOT `C++` framework and binary model files?
+- Idea: Focus on a single more tractable binned model first
 
 ---
-# Publishing statistical model standards
+# JSON spec fully describes the HistFactory model
 
-.bold[TODO: Add slide about HS3]
+.kol-1-4.width-100[
+- Human & machine readable .bold[declarative] statistical models
+- Industry standard
+   - Will be with us forever
+- Parsable by every language
+   - Highly portable
+   - Bidirectional translation <br>with ROOT
+- Versionable and easily preserved
+   - JSON Schema [describing<br> HistFactory specification](https://scikit-hep.org/pyhf/likelihood.html#bibliography)
+   - Attractive for analysis preservation
+   - Highly compressible
+]
+.kol-3-4.center[
+.width-105[![demo_JSON](figures/carbon_JSON_spec_annotated.png)]
+
+.center[[`JSON` defining a single channel, two bin counting experiment with systematics](https://scikit-hep.org/pyhf/likelihood.html#toy-example)]
+]
+
+---
+# ATLAS validation and publication of full models
+
+.kol-1-2[
+.center.width-100[[![ATLAS_PUB_Note_title](figures/ATLAS_PUB_Note_title.png)](https://cds.cern.ch/record/2684863)]
+
+.center.width-90[[![overlay_multiplex_contour](figures/overlay_multiplex_contour.png)](https://cds.cern.ch/record/2684863)]
+
+<br>
+.center[(ATLAS, 2019)]
+]
+.kol-1-2[
+.center.width-100[[![CERN_news_story](figures/CERN_news_story.png)](https://home.cern/news/news/knowledge-sharing/new-open-release-allows-theorists-explore-lhc-data-new-way)]
+.center[(CERN, 2020)]
+]
+
+---
+# Large community adoption followed
+<!-- .center.large.bold[Placeholder slide] -->
+.center[
+.width-95[[![community-adoption](figures/community-adoption.svg)](https://scikit-hep.org/pyhf/citations.html)]
+]
+
+---
+# Extending model portability with HS3
+
+.kol-3-5.large[
+* [High Energy Physics Statistics Serialization Standard](https://github.com/hep-statistics-serialization-standard/hep-fit-serialization) (HS3)
+   - Make statistical models: persistent, interchangeable, modifiable, readable
+* Goal: Generalize the pyhf JSON model spec to a feature complete specification for particle physics
+   - Ongoing work across the HS3 team and the adopting tool teams
+   - Tackle supporting more of the "open world" of statistical modeling
+* HS3 spec will support statistical libraries RooFit (`C++`/`ROOT`), pyhf (Python), BAT (Julia), and others
+   - Write once, run anywhere
+   - Draft v0.2 currently in beta
+]
+.kol-2-5[
+<br>
+<br>
+<p style="text-align:center;">
+   <a href="https://github.com/hep-statistics-serialization-standard/hep-fit-serialization">
+      <img src="figures/HS3-paper-title-page.png"; width=110%>
+   </a>
+</p>
+]
 
 ---
 # Dedicated investment for the next decade
