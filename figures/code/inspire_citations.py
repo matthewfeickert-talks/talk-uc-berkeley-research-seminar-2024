@@ -2,9 +2,6 @@ from pathlib import Path
 
 import matplotlib.pyplot as plt
 
-# XKCD style
-plt.xkcd()
-
 dates = [2020, 2021, 2022, 2023, 2024]
 citations = [1, 14, 37, 46, 5]
 
