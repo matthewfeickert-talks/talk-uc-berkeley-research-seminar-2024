@@ -765,38 +765,29 @@ $$
 .bold.center[Having access to the gradients can make the fit orders of magnitude faster than finite difference]
 
 ---
-# Enabling new tools with autodiff [TODO: CLARIFY]
+# Moving towards differential workflows
 
-.kol-1-1[
 .kol-1-3[
 <p style="text-align:center;">
    <img src="figures/signal_background_stacked.png"; width=100%>
 </p>
-]
-.kol-1-3[
-<p style="text-align:center;">
-   <img src="figures/significance_scan_compare.png"; width=100%>
-</p>
-]
-.kol-1-3[
-<p style="text-align:center;">
-   <img src="figures/automated_optimization.png"; width=100%>
-</p>
-]
-]
-<!--  -->
-.kol-1-3[
 * Counting experiment for presence of signal process
 * Place discriminate selection cut on observable $x$ to maximize significance $f(x)$
 * Step along cut values in $x$ and calculate significance
 ]
 .kol-1-3[
+<p style="text-align:center;">
+   <img src="figures/significance_scan_compare.png"; width=100%>
+</p>
 * Need differentiable analogue to non-differentiable cut
 * Weight events using activation function of sigmoid
 
 .center[$w=\left(1 + e^{-\alpha(x-c)}\right)^{-1}$]
 ]
 .kol-1-3[
+<p style="text-align:center;">
+   <img src="figures/automated_optimization.png"; width=95%>
+</p>
 * With a simple gradient descent algorithm can easily automate the significance optimization
 * Allows for the "cut" to become a parameter that can be differentiated through for the larger analysis
 ]
