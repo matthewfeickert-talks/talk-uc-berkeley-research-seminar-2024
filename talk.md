@@ -619,7 +619,7 @@ $$
 .kol-1-3.center[
 <p style="text-align:center;">
    <a href="https://inspirehep.net/literature/1845084">
-      <img src="figures/inspire-citations-by-year.png"; width=82%>
+      <img src="figures/inspire-citations.png"; width=82%>
    </a>
 </p>
 ]
