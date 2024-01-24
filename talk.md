@@ -731,11 +731,11 @@ $$
 ---
 # HEP Example: Likelihood Gradients
 
-.footnote[Example adapted from [Lukas Heinrich's PyHEP 2020 tutorial](https://indico.cern.ch/event/882824/timetable/#45-introduction-to-automatic-d)]
-
 .kol-1-2.center[
 <p style="text-align:center;">
-   <img src="figures/carbon_plot_MLE_grads.png"; width=85%>
+   <a href="https://indico.cern.ch/event/882824/timetable/#45-introduction-to-automatic-d">
+      <img src="figures/carbon_plot_MLE_grads.png"; width=85%>
+   </a>
 </p>
 ]
 .kol-1-2.center[
@@ -749,11 +749,11 @@ $$
 ---
 # HEP Example: Likelihood Gradients
 
-.footnote[Example adapted from [Lukas Heinrich's PyHEP 2020 tutorial](https://indico.cern.ch/event/882824/timetable/#45-introduction-to-automatic-d)]
-
 .kol-1-2.center[
 <p style="text-align:center;">
-   <img src="figures/carbon_plot_MLE_grads.png"; width=85%>
+   <a href="https://indico.cern.ch/event/882824/timetable/#45-introduction-to-automatic-d">
+      <img src="figures/carbon_plot_MLE_grads.png"; width=85%>
+   </a>
 </p>
 ]
 .kol-1-2.center[
