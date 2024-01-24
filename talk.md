@@ -901,12 +901,6 @@ Requires all operations to be differentiable
 ]
 
 ---
-class: focus-slide, center
-# Scalable solutions
-
-.huge.bold.center[Differentiable analyses at LHC scale]
-
----
 # Scaling is reasonable
 
 From the 2023 MIAPbP Workshop on on Differentiable and Probabilistic Programming for physics engagement with the broader community showed multiple large scale workflows
@@ -957,15 +951,16 @@ From the 2023 MIAPbP Workshop on on Differentiable and Probabilistic Programming
    </a>
 </p>
 
-.center[Revisiting IRIS-HEP Analysis Systems in the context of distributed scaling and analysis reuse]
+.center[Revisiting .bold[IRIS-HEP Analysis Systems] in the context of distributed scaling and analysis reuse]
 
 ---
 # Analysis Reuse
 
 .large[
-* Data and analyses done at the LHC are unique physics opportunities
-* [RECAST](https://github.com/recast-hep/recast-atlas) has been implemented in ATLAS as an enabling technology
-* Resulting in ATLAS PUB notes extending the physics reach of original publications
+* Data and analyses done at the LHC are .bold[unique scientific opportunities]
+   - They can, and only ever will be, done at one place (LHC) at one time (now!).
+* [RECAST](https://github.com/recast-hep/recast-atlas) .bold[reinterpretation and analysis preservation] framework (Heinrich, Feickert) has been implemented in ATLAS as an enabling technology
+* Results leading to ATLAS public notes extending the physics reach of original publications
 ]
 
 .kol-1-3[
@@ -987,34 +982,27 @@ From the 2023 MIAPbP Workshop on on Differentiable and Probabilistic Programming
 .kol-1-3[
 <p style="text-align:center;">
    <a href="https://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/PUBNOTES/ATL-PHYS-PUB-2021-020/">
-      <img src="figures/ATL-PHYS-PUB-2021-020.png"; width=90%>
+      <img src="figures/ATL-PHYS-PUB-2021-020.png"; width=88%>
    </a>
 </p>
 .caption[[ATL-PHYS-PUB-2021-020](https://inspirehep.net/literature/1870397)]
 ]
 
 ---
-# ML + reinterpretation: Active learning
+# Publishing statistical models
 
-.kol-1-2[
-.huge[
-Leveraging [REANA](https://www.reana.io/) reproducible research data analysis platform possible to run distributed ML and analysis workflows at scale
-]
-<p style="text-align:center;">
-   <a href="https://conference.ippp.dur.ac.uk/event/1178/contributions/6449/">
-      <img src="figures/exclusion-learning.png"; width=90%>
-   </a>
-</p>
-.caption[[ Christian Weber, Reinterpretation Forum 2023](https://conference.ippp.dur.ac.uk/event/1178/contributions/6449/)]
-]
-.kol-1-2[
-<p style="text-align:center;">
-   <a href="https://conference.ippp.dur.ac.uk/event/1178/contributions/6449/">
-      <img src="figures/active-learning-workflow.png"; width=100%>
-   </a>
-</p>
-.caption[[ATL-PHYS-PUB-2023-010](https://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/PUBNOTES/ATL-PHYS-PUB-2023-010/)]
-]
+.bold[TODO: Add slide about impact of pyhf]
+
+
+---
+# Publishing statistical model standards
+
+.bold[TODO: Add slide about HS3]
+
+---
+# Dedicated investment for the next decade
+
+.bold[TODO: Add slide about P5 and funding for the next decade]
 
 ---
 # Applications beyond HEP
@@ -1027,11 +1015,6 @@ Leveraging [REANA](https://www.reana.io/) reproducible research data analysis pl
 * Engagement with the broader scientific open source community
 * Planning for analysis reuse brings flexibility to leverage tooling
 ]
-
----
-# Dedicated support for the next decade
-
-.bold[TODO: Add slide about P5 and funding for the next decade]
 
 ---
 # Summary
@@ -1335,6 +1318,29 @@ Please checkout the many resources we have starting with the [website](https://s
 <br>
 .kol-1-1[
 .bold.center[Groups, libraries, and applications growing rapidly]
+]
+
+---
+# ML + reinterpretation: Active learning
+
+.kol-1-2[
+.huge[
+Leveraging [REANA](https://www.reana.io/) reproducible research data analysis platform possible to run distributed ML and analysis workflows at scale
+]
+<p style="text-align:center;">
+   <a href="https://conference.ippp.dur.ac.uk/event/1178/contributions/6449/">
+      <img src="figures/exclusion-learning.png"; width=90%>
+   </a>
+</p>
+.caption[[ Christian Weber, Reinterpretation Forum 2023](https://conference.ippp.dur.ac.uk/event/1178/contributions/6449/)]
+]
+.kol-1-2[
+<p style="text-align:center;">
+   <a href="https://conference.ippp.dur.ac.uk/event/1178/contributions/6449/">
+      <img src="figures/active-learning-workflow.png"; width=100%>
+   </a>
+</p>
+.caption[[ATL-PHYS-PUB-2023-010](https://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/PUBNOTES/ATL-PHYS-PUB-2023-010/)]
 ]
 
 ---
