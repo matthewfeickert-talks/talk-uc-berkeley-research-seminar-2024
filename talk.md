@@ -607,6 +607,57 @@ $$
    </a>
 </p>
 ]
+.kol-2-3[
+.grid[
+.kol-1-3.center[
+.circle.width-70[![Lukas](figures/collaborators/heinrich.png)]
+
+[Lukas Heinrich](https://github.com/lukasheinrich)
+]
+.kol-1-3.center[
+.circle.width-70[![Matthew](https://avatars2.githubusercontent.com/u/5142394)]
+
+[Matthew Feickert](https://www.matthewfeickert.com/)
+]
+.kol-1-3.center[
+.circle.width-65[![Giordon](figures/collaborators/stark.jpg)]
+
+[Giordon Stark](https://github.com/kratsg)
+]
+]
+]
+]
+
+---
+# `pyhf`: HistFactory in pure Python
+
+.kol-1-1[
+.kol-1-2.large[
+- First non-`C++`/ROOT implementation of the HistFactory p.d.f. template
+.width-40[[![DOI](figures/zenodo.1169739.svg)](https://doi.org/10.5281/zenodo.1169739)] .width-40[[![DOI](https://joss.theoj.org/papers/10.21105/joss.02823/status.svg)](https://doi.org/10.21105/joss.02823)]
+- pure-Python library as second implementation of HistFactory
+  - [`$ python -m pip install pyhf`](https://scikit-hep.org/pyhf/installation.html#install-from-pypi)
+  <!-- - [`$ micromamba install -c conda-forge pyhf`](https://prefix.dev/channels/conda-forge/packages/pyhf) -->
+  - No dependence on large `C++` ROOT framework!
+]
+.kol-1-2.large[
+- Open source tool for all of HEP
+   - [IRIS-HEP](https://iris-hep.org/projects/pyhf.html) supported Scikit-HEP project
+   - Used in ATLAS SUSY, Exotics, and Top groups in [28 published analyses](https://scikit-hep.org/pyhf/citations.html#published-statistical-models)
+   - [Used by](https://scikit-hep.org/pyhf/citations.html#use-citations) flavor physics ([Belle II](https://inspirehep.net/literature/1860766)) and neutrino physics ([MicroBooNE](https://arxiv.org/abs/2310.07660)), phenomenology community ([`SModelS`](https://inspirehep.net/literature/1814793), [`MadAnalysis 5`](https://inspirehep.net/literature/2103971))
+   <!-- - Expanding to future experiments too! -->
+   - [![NumFOCUS Affiliated Project](https://img.shields.io/badge/NumFOCUS-Affiliated%20Project-orange.svg?style=flat&colorA=E1523D&colorB=007D8A)](https://numfocus.org/sponsored-projects/affiliated-projects)
+]
+]
+<!--  -->
+.kol-1-1[
+.kol-1-3.center[
+<p style="text-align:center;">
+   <a href="https://pypi.org/project/pyhf/">
+      <img src="figures/pyhf_PyPI.png"; width=100%>
+   </a>
+</p>
+]
 <!--  -->
 .kol-1-3.center[
 <p style="text-align:center;">
