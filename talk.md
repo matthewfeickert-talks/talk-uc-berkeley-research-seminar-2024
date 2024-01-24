@@ -765,28 +765,40 @@ $$
 .bold.center[Having access to the gradients can make the fit orders of magnitude faster than finite difference]
 
 ---
-# Enable new techniques with autodiff
+# Enabling new tools with autodiff [TODO: CLARIFY]
 
-.kol-2-3[
-* Familiar (toy) example: Optimizing selection "cut" for an analysis.<br>
-Place discriminate selection cut on observable $x$ to maximize significance.
-* Traditionally, step along values in $x$ and calculate significance at each selection. Keep maximum.
-* Need differentiable analogue to non-differentiable "cut".<br>
-Weight events using activation function of sigmoid
+.kol-1-1[
+.kol-1-3[
+<p style="text-align:center;">
+   <img src="figures/signal_background_stacked.png"; width=100%>
+</p>
+]
+.kol-1-3[
+<p style="text-align:center;">
+   <img src="figures/significance_scan_compare.png"; width=100%>
+</p>
+]
+.kol-1-3[
+<p style="text-align:center;">
+   <img src="figures/automated_optimization.png"; width=100%>
+</p>
+]
+]
+<!--  -->
+.kol-1-3[
+* Counting experiment for presence of signal process
+* Place discriminate selection cut on observable $x$ to maximize significance $f(x)$
+* Step along cut values in $x$ and calculate significance
+]
+.kol-1-3[
+* Need differentiable analogue to non-differentiable cut
+* Weight events using activation function of sigmoid
 
 .center[$w=\left(1 + e^{-\alpha(x-c)}\right)^{-1}$]
-
-* Most importantly though, with the differentiable model we have access to the gradient $\partial_{x} f(x)$
-* So can find the maximum significance at the point where the gradient of the significance is zero $\partial_{x} f(x) = 0$
-* With a simple gradient descent algorithm can easily automate the significance optimization
-
 ]
-.kol-1-3.center[
-<p style="text-align:center;">
-   <img src="figures/signal_background_stacked.png"; width=72%>
-   <img src="figures/significance_scan_compare.png"; width=72%>
-   <img src="figures/automated_optimization.png"; width=72%>
-</p>
+.kol-1-3[
+* With a simple gradient descent algorithm can easily automate the significance optimization
+* Allows for the "cut" to become a parameter that can be differentiated through for the larger analysis
 ]
 
 ---
