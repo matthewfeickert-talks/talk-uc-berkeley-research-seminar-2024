@@ -765,124 +765,28 @@ $$
 .bold.center[Having access to the gradients can make the fit orders of magnitude faster than finite difference]
 
 ---
-class: focus-slide, center
 # Enable new techniques with autodiff
 
-.huge.bold.center[Familiar (toy) example: Optimizing selection "cut" for an analysis]
-
----
-# Discriminate Signal and Background
-<!--  -->
-* Counting experiment for presence of signal process
-* Place discriminate selection cut on observable $x$ to maximize significance
-   - Significance: $\sqrt{2 (S+B) \log(1 + \frac{S}{B})-2S}$ (for small $S/B$: significance $\to S/\sqrt{B}$)
-
-.footnote[Example inspired by Alexander Held's [example of a differentiable analysis](https://github.com/alexander-held/differentiable-analysis-example/)]
-
-.kol-1-2.center[
-<p style="text-align:center;">
-   <img src="figures/signal_background_shapes.png"; width=100%>
-</p>
-]
-.kol-1-2.center[
-<p style="text-align:center;">
-   <img src="figures/signal_background_stacked.png"; width=100%>
-</p>
-]
-
----
-# Traditionally: Scan across cut values
-<!--  -->
-- Set baseline cut at $x=0$ (accept everything)
-- Step along cut values in $x$ and calculate significance at each cut. Keep maximum.
-<!--  -->
-.kol-1-2.center[
-.width-100[![signal_background_stacked](figures/signal_background_stacked.png)]
-]
-.kol-1-2[
-.width-100[![significance_cut_scan](figures/significance_cut_scan.png)]
-]
-
-.center[Significance: $\sqrt{2 (S+B) \log(1 + \frac{S}{B})-2S}$]
-
----
-# Differentiable Approach
-
-.kol-1-2.large[
-- Need differentiable analogue to non-differentiable cut
-- Weight events using activation function of sigmoid
+.kol-2-3[
+* Familiar (toy) example: Optimizing selection "cut" for an analysis.<br>
+Place discriminate selection cut on observable $x$ to maximize significance.
+* Traditionally, step along values in $x$ and calculate significance at each selection. Keep maximum.
+* Need differentiable analogue to non-differentiable "cut".<br>
+Weight events using activation function of sigmoid
 
 .center[$w=\left(1 + e^{-\alpha(x-c)}\right)^{-1}$]
 
-- Event far .italic[below] cut: $w \to 0$
-- Event far .italic[above] cut: $w \to 1$
-- $\alpha$ tunable parameter for steepness
-   - Larger $\alpha$ more cut-like
-]
-.kol-1-2[
-<br>
-.width-100[![sigmoid_event_weights](figures/sigmoid_event_weights.png)]
-]
-
----
-# Compare Hard Cuts vs. Differentiable
-
-.kol-1-2.large[
-- For hard cuts the significance was calculated by applying the cut and than using the remaining $S$ and $B$ events
-- But for the differentiable model there aren't cuts, so approximate cuts with the sigmoid approach and weights
-- Comparing the two methods shows good agreement
-- Can see that the approximation to the hard cuts improves with larger $\alpha$
-   - But can become unstable, so tunable
-]
-.kol-1-2.center[
-<br>
-.width-100[![significance_scan_compare](figures/significance_scan_compare.png)]
-]
-
----
-# Compare Hard Cuts vs. Differentiable
-
-.kol-1-2.large[
-- For hard cuts the significance was calculated by applying the cut and then using the remaining $S$ and $B$ events
-- But for the differentiable model there aren't cuts, so approximate cuts with the sigmoid approach and weights
-- Comparing the two methods shows good agreement
-- Can see that the approximation to the hard cuts improves with larger $\alpha$
-   - But can become unstable, so tunable
-]
-.kol-1-2.center[
-<br>
-.width-100[![significance_scan_compare_high_alpha](figures/significance_scan_compare_high_alpha.png)]
-]
-
----
-# Accessing the Gradient
-
-.kol-2-5.large[
-* Most importantly though, with the differentiable model we have access to the gradient
-   - $\partial_{x} f(x)$
-* So can find the maximum significance at the point where the gradient of the significance is zero
-   - $\partial_{x} f(x) = 0$
-* With the gradient in hand this cries out for automated optimization!
-]
-.kol-3-5.center[
-<p style="text-align:center;">
-   <img src="figures/significance_gradient.png"; width=90%>
-</p>
-]
-
----
-# Automated Optimization
-
-.kol-2-5.large[
+* Most importantly though, with the differentiable model we have access to the gradient $\partial_{x} f(x)$
+* So can find the maximum significance at the point where the gradient of the significance is zero $\partial_{x} f(x) = 0$
 * With a simple gradient descent algorithm can easily automate the significance optimization
-* For this toy example, obviously less efficient then cut and count scan
-* Gradient methods apply well in higher dimensional problems
-* Allows for the "cut" to become a parameter that can be differentiated through for the larger analysis
-]
-.kol-3-5.center[
-.width-100[![automated_optimization](figures/automated_optimization.png)]
 
-<!-- TODO: Make this an animated GIF -->
+]
+.kol-1-3.center[
+<p style="text-align:center;">
+   <img src="figures/signal_background_stacked.png"; width=72%>
+   <img src="figures/significance_scan_compare.png"; width=72%>
+   <img src="figures/automated_optimization.png"; width=72%>
+</p>
 ]
 
 ---
@@ -1264,6 +1168,121 @@ $$
 .kol-3-7[
 .center.width-70[[![systematics](figures/systematics.png)](https://indico.cern.ch/event/1076231/contributions/4560405/)]
 .center[Image credit: [Alex Held](https://indico.cern.ch/event/1076231/contributions/4560405/)]
+]
+
+---
+# Discriminate Signal and Background
+<!--  -->
+* Counting experiment for presence of signal process
+* Place discriminate selection cut on observable $x$ to maximize significance
+   - Significance: $\sqrt{2 (S+B) \log(1 + \frac{S}{B})-2S}$ (for small $S/B$: significance $\to S/\sqrt{B}$)
+
+.footnote[Example inspired by Alexander Held's [example of a differentiable analysis](https://github.com/alexander-held/differentiable-analysis-example/)]
+
+.kol-1-2.center[
+<p style="text-align:center;">
+   <img src="figures/signal_background_shapes.png"; width=100%>
+</p>
+]
+.kol-1-2.center[
+<p style="text-align:center;">
+   <img src="figures/signal_background_stacked.png"; width=100%>
+</p>
+]
+
+---
+# Traditionally: Scan across cut values
+<!--  -->
+- Set baseline cut at $x=0$ (accept everything)
+- Step along cut values in $x$ and calculate significance at each cut. Keep maximum.
+<!--  -->
+.kol-1-2.center[
+.width-100[![signal_background_stacked](figures/signal_background_stacked.png)]
+]
+.kol-1-2[
+.width-100[![significance_cut_scan](figures/significance_cut_scan.png)]
+]
+
+.center[Significance: $\sqrt{2 (S+B) \log(1 + \frac{S}{B})-2S}$]
+
+---
+# Differentiable Approach
+
+.kol-1-2.large[
+- Need differentiable analogue to non-differentiable cut
+- Weight events using activation function of sigmoid
+
+.center[$w=\left(1 + e^{-\alpha(x-c)}\right)^{-1}$]
+
+- Event far .italic[below] cut: $w \to 0$
+- Event far .italic[above] cut: $w \to 1$
+- $\alpha$ tunable parameter for steepness
+   - Larger $\alpha$ more cut-like
+]
+.kol-1-2[
+<br>
+.width-100[![sigmoid_event_weights](figures/sigmoid_event_weights.png)]
+]
+
+---
+# Compare Hard Cuts vs. Differentiable
+
+.kol-1-2.large[
+- For hard cuts the significance was calculated by applying the cut and than using the remaining $S$ and $B$ events
+- But for the differentiable model there aren't cuts, so approximate cuts with the sigmoid approach and weights
+- Comparing the two methods shows good agreement
+- Can see that the approximation to the hard cuts improves with larger $\alpha$
+   - But can become unstable, so tunable
+]
+.kol-1-2.center[
+<br>
+.width-100[![significance_scan_compare](figures/significance_scan_compare.png)]
+]
+
+---
+# Compare Hard Cuts vs. Differentiable
+
+.kol-1-2.large[
+- For hard cuts the significance was calculated by applying the cut and then using the remaining $S$ and $B$ events
+- But for the differentiable model there aren't cuts, so approximate cuts with the sigmoid approach and weights
+- Comparing the two methods shows good agreement
+- Can see that the approximation to the hard cuts improves with larger $\alpha$
+   - But can become unstable, so tunable
+]
+.kol-1-2.center[
+<br>
+.width-100[![significance_scan_compare_high_alpha](figures/significance_scan_compare_high_alpha.png)]
+]
+
+---
+# Accessing the Gradient
+
+.kol-2-5.large[
+* Most importantly though, with the differentiable model we have access to the gradient
+   - $\partial_{x} f(x)$
+* So can find the maximum significance at the point where the gradient of the significance is zero
+   - $\partial_{x} f(x) = 0$
+* With the gradient in hand this cries out for automated optimization!
+]
+.kol-3-5.center[
+<p style="text-align:center;">
+   <img src="figures/significance_gradient.png"; width=90%>
+</p>
+]
+
+---
+# Automated Optimization
+
+.kol-2-5.large[
+* With a simple gradient descent algorithm can easily automate the significance optimization
+* For this toy example, obviously less efficient then cut and count scan
+* Gradient methods apply well in higher dimensional problems
+* Allows for the "cut" to become a parameter that can be differentiated through for the larger analysis
+]
+.kol-3-5.center[
+.width-100[![automated_optimization](figures/automated_optimization.png)]
+
+<!-- TODO: Make this an animated GIF -->
 ]
 
 ---
