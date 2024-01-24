@@ -1153,16 +1153,31 @@ Report of the 2023 Particle Physics Project Prioritization Panel](https://www.us
 ---
 # Summary
 
-.huge[
+.large[
 * Many challenges and opportunities ahead at the HL-LHC
 * Engaging the broader scientific open source community has been a boon for particle physics tooling
 * Automatic differentiation gives a powerful tool in the form of differentiable programming
 * Scalable and reusable analysis workflows allow leveraging our tools
+* Exciting future with full investment in these research areas is happening now!
 ]
 
+.kol-1-3[
 <p style="text-align:center;">
-   <img src="figures/MLE_grad_map_full.png"; width=20%>
+   <img src="figures/lhc_lumi.png"; width=60%>
 </p>
+]
+.kol-1-3[
+<p style="text-align:center;">
+   <a href="https://iris-hep.org/as.html">
+      <img src="figures/cabinetry-vertical-slice.png"; width=110%>
+   </a>
+</p>
+]
+.kol-1-3[
+<p style="text-align:center;">
+   <img src="figures/MLE_grad_map_full.png"; width=75%>
+</p>
+]
 
 ---
 class: end-slide, center
