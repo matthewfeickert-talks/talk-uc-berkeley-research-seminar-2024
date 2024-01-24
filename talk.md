@@ -592,7 +592,7 @@ $$
 .kol-1-2.large[
 - Open source tool for all of HEP
    - [IRIS-HEP](https://iris-hep.org/projects/pyhf.html) supported Scikit-HEP project
-   - Used in ATLAS SUSY, Exotics, and Top groups in [28 published analyses](https://scikit-hep.org/pyhf/citations.html#published-statistical-models)
+   - Used in ATLAS SUSY, Exotics, and Top physics groups in [28 published analyses](https://scikit-hep.org/pyhf/citations.html#published-statistical-models)
    - [Used by](https://scikit-hep.org/pyhf/citations.html#use-citations) flavor physics ([Belle II](https://inspirehep.net/literature/1860766)) and neutrino physics ([MicroBooNE](https://arxiv.org/abs/2310.07660)), phenomenology community ([`SModelS`](https://inspirehep.net/literature/1814793), [`MadAnalysis 5`](https://inspirehep.net/literature/2103971))
    <!-- - Expanding to future experiments too! -->
    - [![NumFOCUS Affiliated Project](https://img.shields.io/badge/NumFOCUS-Affiliated%20Project-orange.svg?style=flat&colorA=E1523D&colorB=007D8A)](https://numfocus.org/sponsored-projects/affiliated-projects)
@@ -643,7 +643,7 @@ $$
 .kol-1-2.large[
 - Open source tool for all of HEP
    - [IRIS-HEP](https://iris-hep.org/projects/pyhf.html) supported Scikit-HEP project
-   - Used in ATLAS SUSY, Exotics, and Top groups in [28 published analyses](https://scikit-hep.org/pyhf/citations.html#published-statistical-models)
+   - Used in ATLAS SUSY, Exotics, and Top physics groups in [28 published analyses](https://scikit-hep.org/pyhf/citations.html#published-statistical-models)
    - [Used by](https://scikit-hep.org/pyhf/citations.html#use-citations) flavor physics ([Belle II](https://inspirehep.net/literature/1860766)) and neutrino physics ([MicroBooNE](https://arxiv.org/abs/2310.07660)), phenomenology community ([`SModelS`](https://inspirehep.net/literature/1814793), [`MadAnalysis 5`](https://inspirehep.net/literature/2103971))
    <!-- - Expanding to future experiments too! -->
    - [![NumFOCUS Affiliated Project](https://img.shields.io/badge/NumFOCUS-Affiliated%20Project-orange.svg?style=flat&colorA=E1523D&colorB=007D8A)](https://numfocus.org/sponsored-projects/affiliated-projects)
