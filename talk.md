@@ -772,7 +772,7 @@ $$
    <img src="figures/signal_background_stacked.png"; width=100%>
 </p>
 * Counting experiment for presence of signal process
-* Place discriminate selection cut on observable $x$ to maximize significance $f(x)$
+* Place discriminate selection cut on observable $x$ to maximize significance $S(x)$
 * Step along cut values in $x$ and calculate significance
 ]
 .kol-1-3[
@@ -878,7 +878,7 @@ Requires all operations to be differentiable
 
 <p style="text-align:center;">
    <a href="https://github.com/gradhep/neos">
-      <img src="https://raw.githubusercontent.com/gradhep/neos/master/nbs/assets/pyhf_3.gif"; width=95%>
+      <img src="https://raw.githubusercontent.com/gradhep/neos/master/nbs/assets/pyhf_3.gif"; width=93%>
    </a>
 </p>
 .caption[`neos` 3 bin KDE transformed observable (NN output) optimized with systematics w.r.t. $\mathrm{CL}_{s}$]
@@ -945,7 +945,7 @@ From the 2023 MIAPbP Workshop on on Differentiable and Probabilistic Programming
 .kol-3-5.center[
 <br>
 .width-100[[![metadiff](figures/metadiff.png)](https://indico.cern.ch/event/960587/contributions/4070325/)]
-.caption[[Differentiating through PyTorch, JAX, and TensorFlow using FaaS](https://indico.cern.ch/event/960587/contributions/4070325/), Lukas Heinrich]
+.caption[[Differentiating through PyTorch, JAX, and TensorFlow using FaaS](https://indico.cern.ch/event/960587/contributions/4070325/)]
 ]
 
 ---
