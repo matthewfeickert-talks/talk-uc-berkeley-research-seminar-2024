@@ -963,7 +963,7 @@ From the 2023 MIAPbP Workshop on on Differentiable and Probabilistic Programming
 .large[
 * Data and analyses done at the LHC are .bold[unique scientific opportunities]
    - They can, and only ever will be, done at one place (LHC) at one time (now!).
-* [RECAST](https://github.com/recast-hep/recast-atlas) .bold[reinterpretation and analysis preservation] framework (Heinrich, Feickert) has been implemented in ATLAS as an enabling technology
+* Workflow language based [RECAST](https://github.com/recast-hep/recast-atlas) .bold[reinterpretation and analysis preservation] framework (Heinrich, Feickert) has been implemented in ATLAS as an enabling technology
 * Results leading to ATLAS public notes extending the physics reach of original publications
 ]
 
@@ -990,6 +990,31 @@ From the 2023 MIAPbP Workshop on on Differentiable and Probabilistic Programming
    </a>
 </p>
 .caption[[ATL-PHYS-PUB-2021-020](https://inspirehep.net/literature/1870397)]
+]
+
+---
+# Analysis Reuse enabling new physics analysis
+
+.kol-2-3[
+.large[
+* RECAST is designed to work with the CERN [REANA](https://reana.io/) open source reproducible research data analysis platform to .bold[perform analysis at scale]
+* RECAST + REANA have enabled the recent (2023) ATLAS LHC Run-2 Phenomenological Minimal Supersymmetric Standard Model (pMSSM) scan analysis
+   - Theory model .bold[reduced] down to 19-dimensional parameter space
+   - Analysis of combination of published ATLAS LHC Run-2 analyses uses .bold[tens of thousands] of parameter space models (each a full analysis evaluation)
+* Analysis .bold[would be intractable] without existing full analysis preservation from RECAST scaled to thousands of cores with REANA
+]
+]
+.kol-1-3[
+<p style="text-align:center;">
+   <a href="https://reana.io/">
+      <img src="figures/logo-reana.svg"; width=70%>
+   </a>
+</p>
+<p style="text-align:center;">
+   <a href="https://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/CONFNOTES/ATLAS-CONF-2023-055/">
+      <img src="figures/ATLAS-CONF-2023-055.png"; width=95%>
+   </a>
+</p>
 ]
 
 ---
@@ -1113,13 +1138,16 @@ Report of the 2023 Particle Physics Project Prioritization Panel](https://www.us
 ---
 # Applications beyond HEP
 
-.huge[
-* General techniques and technologies applied to HEP problems, but not constrained to them
-   - Automatic differentiation is a rich field of research unto itself
+.huge[Today we've discussed .bold[general techniques and technologies] applied to HEP problems, but not constrained to them]
+
+.large[
+* Automatic differentiation is a rich field of research unto itself
    - [Machine-learning Optimized Design of Experiments (MODE) collaboration](https://mode-collaboration.github.io/) working towards detector design optimization using automatic differentiation
    - [Fully differentiable branching programs](https://inspirehep.net/literature/2692444) (novel!) can attack problems across fields
 * Engagement with the broader scientific open source community
+   - Scikit-HEP and IRIS-HEP have strong involvement in Scientific Python project, NumFOCUS, and SciPy Conference, JuliaHEP being fostered now
 * Planning for analysis reuse brings flexibility to leverage tooling
+   - Adopting standards and workflows allows for tooling to change with opportunity
 ]
 
 ---
