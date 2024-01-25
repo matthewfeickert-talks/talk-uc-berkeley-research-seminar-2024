@@ -1103,7 +1103,7 @@ From the 2023 MIAPbP Workshop on on Differentiable and Probabilistic Programming
 ---
 # Dedicated investment for the next decades
 
-.bold.center.large[Exiting future for all these areas in particle physics with large scale investment!]
+.bold.center.large[Exciting future for all these areas in particle physics with large scale investment!]
 
 .kol-1-3[
 <p style="text-align:center;">
