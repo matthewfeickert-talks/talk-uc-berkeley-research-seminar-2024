@@ -955,35 +955,22 @@ From the 2023 MIAPbP Workshop on on Differentiable and Probabilistic Programming
 # Analysis Reuse
 
 .large[
-* Data and analyses done at the LHC are .bold[unique scientific opportunities]
-   - They can, and only ever will be, done at one place (LHC) at one time (now!).
+* Data and analyses done at the LHC are .bold[scientific opportunities performed under unique experimental conditions]
 * Workflow language based [RECAST](https://github.com/recast-hep/recast-atlas) .bold[reinterpretation and analysis preservation] framework (Heinrich, Feickert) has been implemented in ATLAS as an enabling technology
 * Results leading to ATLAS public notes extending the physics reach of original publications
 ]
 
-.kol-1-3[
+.kol-2-3[
 <p style="text-align:center;">
-   <a href="https://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/PUBNOTES/ATL-PHYS-PUB-2019-032/">
-      <img src="figures/ATL-PHYS-PUB-2019-032.png"; width=100%>
-   </a>
+   <img src="figures/recast-workflow-goal.png"; width=100%>
 </p>
-.caption[[ATL-PHYS-PUB-2019-032](https://inspirehep.net/literature/1795215)]
 ]
 .kol-1-3[
 <p style="text-align:center;">
    <a href="https://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/PUBNOTES/ATL-PHYS-PUB-2020-007/">
-      <img src="figures/ATL-PHYS-PUB-2020-007.png"; width=100%>
+      <img src="figures/recasted-analysis.png"; width=100%>
    </a>
 </p>
-.caption[[ATL-PHYS-PUB-2020-007](https://inspirehep.net/literature/1795203)]
-]
-.kol-1-3[
-<p style="text-align:center;">
-   <a href="https://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/PUBNOTES/ATL-PHYS-PUB-2021-020/">
-      <img src="figures/ATL-PHYS-PUB-2021-020.png"; width=88%>
-   </a>
-</p>
-.caption[[ATL-PHYS-PUB-2021-020](https://inspirehep.net/literature/1870397)]
 ]
 
 ---
@@ -992,7 +979,7 @@ From the 2023 MIAPbP Workshop on on Differentiable and Probabilistic Programming
 .kol-2-3[
 .large[
 * RECAST is designed to work with the CERN [REANA](https://reana.io/) open source reproducible research data analysis platform to .bold[perform analysis at scale]
-* RECAST + REANA have enabled the recent (2023) ATLAS LHC Run-2 Phenomenological Minimal Supersymmetric Standard Model (pMSSM) scan analysis
+* RECAST + REANA enabled the recent (2023) ATLAS LHC Run-2 Phenomenological Minimal Supersymmetric Standard Model (pMSSM) scan analysis
    - Theory model .bold[reduced] down to 19-dimensional parameter space
    - Analysis of combination of published ATLAS LHC Run-2 analyses uses .bold[tens of thousands] of parameter space models (each a full analysis evaluation)
 * Analysis .bold[would be intractable] without existing full analysis preservation from RECAST scaled to thousands of cores with REANA
