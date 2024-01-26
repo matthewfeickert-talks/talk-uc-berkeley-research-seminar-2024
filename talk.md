@@ -170,15 +170,19 @@ January 31st, 2024
 # IRIS-HEP
 
 .kol-3-5[
-<p style="text-align:center;">
-   <a href="https://inspirehep.net/literature/2628983">
-      <img src="figures/IRIS-HEP-HL-LHC-gaps.png"; width=90%>
-   </a>
-</p>
-.large[
-* LHC experiments as stakeholders
-* LHC operations as partners
+.huge.bold[[HL-LHC Software and Computing Gaps](https://inspirehep.net/literature/2628983)]
+.huge[
+1. Raw resource gaps
+
+2. Scalability of the distributed computing cyberinfrastructure
+
+3. Analysis at scale
+
+4. Sustainability
 ]
+
+.large[LHC operations teams are partners in this work, with the LHC experiment as primary stakeholders]
+
 ]
 .kol-2-5[
 <br>
