@@ -779,14 +779,14 @@ $$
 .bold.center[Having access to the gradients can make the fit orders of magnitude faster than finite difference]
 
 ---
-# Moving towards differential workflows
+# Moving towards differentiable workflows
 
 .kol-1-3[
 <p style="text-align:center;">
    <img src="figures/signal_background_stacked.png"; width=100%>
 </p>
 * Counting experiment for presence of signal process
-* Place discriminate selection cut on observable $x$ to maximize significance $S(x)$
+* Place discriminate selection ("cut") on observable $x$ to maximize significance $S(x)$
 * Step along cut values in $x$ and calculate significance
 ]
 .kol-1-3[
