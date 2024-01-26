@@ -169,6 +169,8 @@ January 31st, 2024
 ---
 # IRIS-HEP
 
+.large[.bold[Execute R&D activities] required to close the HL-LHC software and computing gaps and serve as .bold[intellectual hub for larger community]]
+
 .kol-3-5[
 .huge.bold[[HL-LHC Software and Computing Gaps](https://inspirehep.net/literature/2628983)]
 .huge[
@@ -180,12 +182,8 @@ January 31st, 2024
 
 4. Sustainability
 ]
-
-.large[LHC operations teams are partners in this work, with the LHC experiment as primary stakeholders]
-
 ]
 .kol-2-5[
-<br>
 <p style="text-align:center;">
    <a href="https://iris-hep.org/">
       <img src="assets/logos/logo_IRIS-HEP.png"; width=100%>
