@@ -88,6 +88,17 @@ January 31st, 2024
 ]
 ]
 
+
+---
+# High Energy Physics at the LHC
+
+<p style="text-align:center;">
+   <!-- original dimensions: https://videos.cern.ch/record/2298073
+   width = 560, height-315  -->
+   <iframe scrolling="no"  src="https://videos.cern.ch/video/ATLAS-VIDEO-2023-013-001?autoplay=1&loop=1" width="840" height="473" frameborder="0" allowfullscreen></iframe>
+</p>
+.center[[Animated ATLAS event display of simulated new physics (.italic[Phys. Lett. B 848 (2024) 138324])](https://atlaspo.cern.ch/public/event_display/)]
+
 ---
 # High Energy Physics at the LHC
 
