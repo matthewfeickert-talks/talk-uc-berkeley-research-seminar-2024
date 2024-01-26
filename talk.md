@@ -147,10 +147,10 @@ January 31st, 2024
 .center.large[Challenge to be able to .bold[record, store, and analyze] the data]
 
 <p style="text-align:center;">
-   <a href="https://cds.cern.ch/record/2803119?ln=en">
+   <a href="https://cds.cern.ch/record/2802918">
       <img src="figures/HL-LHC-cpu-projections-atlas.png"; width=50%>
    </a>
-.center[[ATLAS software and computing review](https://cds.cern.ch/record/2803119?ln=en)]
+.center[[ATLAS software and computing review](https://cds.cern.ch/record/2802918)]
 </p>
 
 .center.large[Projected .bold[required compute usage] for HL-LHC (want .blue[R]&.red[D] below .black[budget] line)]
@@ -1191,7 +1191,7 @@ class: end-slide, center
 
 .kol-1-2[
 <p style="text-align:center;">
-   <a href="https://cds.cern.ch/record/2803119?ln=en">
+   <a href="https://cds.cern.ch/record/2802918">
       <img src="figures/HL-LHC-disk-projections-atlas.png"; width=95%>
    </a>
 </p>
