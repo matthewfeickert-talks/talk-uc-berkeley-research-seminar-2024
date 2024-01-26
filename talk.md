@@ -27,8 +27,8 @@ January 31st, 2024
 .huge[
 * As a "data physicist" have privileged opportunity to work among multiple scientific communities
 * Care about .bold[reusable] open science to be able to push particle physics forward at the .bold[community scale]
-   - The challenges of the next decade provide wonderful research environments that will require interdisciplinary knowledge exchange to fully attack
-* Today we'll share .bold[high level] views of deeply .bold[technical problems]
+   - The challenges of the next decade provide wonderful research environments that will require interdisciplinary knowledge exchange to fully engage
+* Today I'll share .bold[high level] views of deeply .bold[technical problems]
 ]
 ]
 .kol-1-3[
