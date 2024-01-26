@@ -939,25 +939,6 @@ From the 2023 MIAPbP Workshop on on Differentiable and Probabilistic Programming
 ]
 
 ---
-# Gradient Passing
-
-.kol-2-5.code-large[
-- Real world high energy physics analyses have various challenges:
-   - Computations highly complex chains
-   - Not implementable in a single framework
-   - Asynchronous multi-step procedures
-   - Strong need for distributed computing
-- Passing of gradients .bold[between] different implementations and services
-   - Large scale machine learning in industry needs to do this to train models
-- Possible solution to allow for distributed computations at scale exploiting gradients
-]
-.kol-3-5.center[
-<br>
-.width-100[[![metadiff](figures/metadiff.png)](https://indico.cern.ch/event/960587/contributions/4070325/)]
-.caption[[Differentiating through PyTorch, JAX, and TensorFlow using FaaS](https://indico.cern.ch/event/960587/contributions/4070325/)]
-]
-
----
 # Analysis Reuse
 
 .large[
@@ -1467,6 +1448,25 @@ Please checkout the many resources we have starting with the [website](https://s
 <br>
 .kol-1-1[
 .bold.center[Groups, libraries, and applications growing rapidly]
+]
+
+---
+# Gradient Passing
+
+.kol-2-5.code-large[
+- Real world high energy physics analyses have various challenges:
+   - Computations highly complex chains
+   - Not implementable in a single framework
+   - Asynchronous multi-step procedures
+   - Strong need for distributed computing
+- Passing of gradients .bold[between] different implementations and services
+   - Large scale machine learning in industry needs to do this to train models
+- Possible solution to allow for distributed computations at scale exploiting gradients
+]
+.kol-3-5.center[
+<br>
+.width-100[[![metadiff](figures/metadiff.png)](https://indico.cern.ch/event/960587/contributions/4070325/)]
+.caption[[Differentiating through PyTorch, JAX, and TensorFlow using FaaS](https://indico.cern.ch/event/960587/contributions/4070325/)]
 ]
 
 ---
