@@ -1042,8 +1042,10 @@ From the 2023 MIAPbP Workshop on on Differentiable and Probabilistic Programming
    - Attractive for analysis preservation
    - Highly compressible
 ]
-.kol-3-4.center[
-.width-105[![demo_JSON](figures/carbon_JSON_spec_annotated.png)]
+.kol-3-4[
+<p style="text-align:center;">
+   <img src="figures/carbon_JSON_spec_annotated.png"; width=98%>
+</p>
 
 .center[[`JSON` defining a single channel, two bin counting experiment with systematics](https://scikit-hep.org/pyhf/likelihood.html#toy-example)]
 ]
