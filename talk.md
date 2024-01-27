@@ -944,7 +944,7 @@ From the 2023 MIAPbP Workshop on on Differentiable and Probabilistic Programming
 
 .large[
 * Data and analyses done at the LHC are .bold[scientific opportunities performed under unique experimental conditions]
-* Workflow language based [RECAST](https://github.com/recast-hep/recast-atlas) .bold[reinterpretation and analysis preservation] framework (Heinrich, Feickert) has been implemented in ATLAS as an enabling technology
+* Workflow language based [RECAST](https://github.com/recast-hep/recast-atlas) .bold[reinterpretation and analysis preservation] framework (Cranmer, Heinrich, Feickert) has been implemented in ATLAS as an enabling technology
 * Results leading to ATLAS public notes extending the physics reach of original publications
 ]
 
