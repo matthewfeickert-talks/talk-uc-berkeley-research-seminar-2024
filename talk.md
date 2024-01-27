@@ -105,7 +105,7 @@ January 31st, 2024
 .kol-3-5[
 .large[
 * LHC beam crossing at experiments every .bold[25 ns] <br>(.bold[40 MHz] collisions)
-   - Would translate to about 1 petabyte per second ⚠️
+   - Would translate to around 100 terabytes per second ⚠️
    - Use real time data processing ("trigger") system to only keep potentially interesting collisions
    - Use further physics specific selections before writing to disk to reduce data stream even more
 * Translates to roughly .bold[90 petabytes] of collision data recorded per year
