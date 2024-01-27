@@ -1055,11 +1055,11 @@ From the 2023 MIAPbP Workshop on on Differentiable and Probabilistic Programming
 * [High Energy Physics Statistics Serialization Standard](https://github.com/hep-statistics-serialization-standard/hep-fit-serialization) (HS3)
    - Make statistical models: persistent, interchangeable, modifiable, readable
 * Goal: Generalize the pyhf JSON model spec to a feature complete specification for particle physics
-   - Ongoing work across the HS3 team and the adopting tool teams
+   - Ongoing work across the HS3 team and adopting tool teams
    - Tackle supporting more of the "open world" of statistical modeling
 * HS3 spec will support statistical libraries RooFit (`C++`/`ROOT`), pyhf (Python), BAT (Julia), and others
    - Write once, run anywhere
-   - Draft v0.2 currently in beta
+   - Draft v0.2 currently in alpha (first deployment in `ROOTFit`)
 ]
 .kol-2-5[
 <br>
