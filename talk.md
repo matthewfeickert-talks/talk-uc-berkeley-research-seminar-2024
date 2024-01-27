@@ -1083,10 +1083,11 @@ From the 2023 MIAPbP Workshop on on Differentiable and Probabilistic Programming
    </a>
 </p>
 
-.center[[Exploring the Quantum Universe<br>
-Report of the 2023 Particle Physics Project Prioritization Panel](https://www.usparticlephysics.org/2023-p5-report/)]
+.center[[Report of the 2023 Particle Physics Project Prioritization Panel](https://www.usparticlephysics.org/2023-p5-report/)]
 
-.large[Once a decade formal recommendations from US particle physics community to .bold[US Congress and funding agencies]]
+Once a decade formal recommendations from US particle physics community to .bold[US Congress and funding agencies]
+
+Serve on Formation Task Force for the Coordinating Panel for Software and Computing
 ]
 .kol-2-3[
 <p style="text-align:center;">
