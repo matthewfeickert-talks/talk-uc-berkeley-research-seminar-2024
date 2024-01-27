@@ -127,21 +127,6 @@ January 31st, 2024
 <!--  -->
 <p style="text-align:center;">
    <a href="https://hilumilhc.web.cern.ch/content/hl-lhc-project">
-      <img src="figures/HL-LHC_schedule.png"; width=75%>
-   </a>
-</p>
-<!--  -->
-.large[
-* Increase in data generating collision rate ("luminosity") of roughly order of magnitude
-   - Factor of .bold[20-25] times ($3$ - $4$ $\mathrm{ab}^{-1}$) the amount of collisions delivered from Run-2 of the LHC
-* Boon for measurements constrained by statistical uncertainties, searches for rare processes
-]
-
----
-# Opportunities and Challenges of the HL-LHC
-<!--  -->
-<p style="text-align:center;">
-   <a href="https://hilumilhc.web.cern.ch/content/hl-lhc-project">
       <img src="figures/HL-LHC_schedule.png"; width=69%>
    </a>
    <img src="figures/lhc_lumi.png"; width=30%>
