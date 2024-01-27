@@ -112,6 +112,7 @@ January 31st, 2024
 <!-- * LHC Run 2 produced data set 5x that used for the 2012 Higgs discovery -->
 * LHC data taking scheduled to continue for another roughly .bold[20 years]
    - Majority of data is yet to come!
+   - The roughly 10% taken already challenging
 ]
 ]
 .kol-2-5[
