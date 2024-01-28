@@ -673,7 +673,7 @@ Mathematical grammar for a simultaneous fit with multiple disjoint _channels_ (o
 .grid[
 .kol-2-3[
 - All numerical operations implemented in .bold[tensor backends] through an API of $n$-dimensional array operations
-- Using deep learning frameworks as computational backends allows for .bold[exploitation of auto differentiation (autodiff) and GPU acceleration]
+- Using deep learning frameworks as computational backends allows for .bold[exploitation of automatic differentiation and GPU acceleration]
 - As huge buy in from industry we benefit for free as these frameworks are .bold[continually improved] by professional software engineers (physicists are not)
 
 .kol-1-2.center[
@@ -951,7 +951,7 @@ From the 2023 MIAPbP Workshop on on Differentiable and Probabilistic Programming
    - Will be with us forever
 - Parsable by every language
    - Highly portable
-   - Bidirectional translation <br>with ROOT
+   - Bidirectional translation <br>with `C++` ROOT
 - Versionable and easily preserved
    - JSON Schema [describing<br> HistFactory specification](https://scikit-hep.org/pyhf/likelihood.html#bibliography)
    - Attractive for analysis preservation
