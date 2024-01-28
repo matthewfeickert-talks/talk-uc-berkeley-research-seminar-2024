@@ -10,7 +10,7 @@ count: false
 <br><br>
 [matthew.feickert@cern.ch](mailto:matthew.feickert@cern.ch)
 
-[UC Berkeley Research Seminar](https://matthewfeickert-talks.github.io/talk-uc-berkeley-research-seminar-2024/)
+[UC Berkeley Neyman](https://events.berkeley.edu/neyman-seminar/event/236154-neyman-seminar-matthew-feickert) [Seminar](https://matthewfeickert-talks.github.io/talk-uc-berkeley-research-seminar-2024/)
 
 January 31st, 2024
 
@@ -89,6 +89,50 @@ January 31st, 2024
 ]
 ]
 
+---
+# High Energy Physics at the LHC
+
+.kol-1-2.center[
+<p style="text-align:center;">
+   <a href="https://howlargeisthelhc.com/">
+      <img src="figures/how-large-is-the-lhc.png"; width=60%>
+   </a>
+</p>
+.caption[LHC]
+]
+.kol-1-2.center[
+<p style="text-align:center;">
+   <a href="https://atlas.cern/">
+      <img src="figures/ATLAS_TRex.png"; width=100%>
+   </a>
+</p>
+.caption[ATLAS]
+]
+.kol-1-1[
+.kol-1-2.center[
+<p style="text-align:center;">
+   <a href="https://twitter.com/HEPfeickert/status/1269406145858469891?s=20">
+      <img src="figures/SM_mug.jpg"; width=45%>
+   </a>
+</p>
+]
+.kol-1-2.center[
+.kol-1-2.center[
+<p style="text-align:center;">
+   <a href="https://twitter.com/HEPfeickert/status/1269406145858469891?s=20">
+      <img src="figures/ParticleZoo_Higgs.jpg"; width=100%>
+   </a>
+</p>
+]
+.kol-1-2.center[
+<p style="text-align:center;">
+   <a href="https://twitter.com/HEPfeickert/status/1269406145858469891?s=20">
+      <img src="figures/ParticleZoo_DarkMatter.jpg"; width=85%>
+   </a>
+</p>
+]
+]
+]
 
 ---
 # High Energy Physics at the LHC
