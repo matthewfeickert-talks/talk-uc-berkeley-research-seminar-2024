@@ -1,8 +1,9 @@
 class: middle, center, title-slide
 count: false
 
-# Towards Differentiable Physics Analysis
-# at the HL-LHC and Beyond
+# Towards Differentiable Physics Analysis at the
+# High-Luminosity Large Hadron Collider
+# and Beyond
 
 .huge.blue[Matthew Feickert]<br>
 .huge[(University of Wisconsin-Madison)]
