@@ -852,11 +852,11 @@ Requires all operations to be differentiable
 
 <p style="text-align:center;">
    <a href="https://iris-hep.org/as.html">
-      <img src="figures/cabinetry-vertical-slice.png"; width=80%>
+      <img src="figures/cabinetry-vertical-slice.png"; width=90%>
    </a>
 </p>
 
-.center[Revisiting .bold[IRIS-HEP Analysis Systems] in the context of distributed scaling and analysis reuse]
+.center[Revisiting .bold[IRIS-HEP Analysis Systems] in the context of distributed scaling (HL-LHC) and analysis reuse]
 
 ---
 # Scaling is reasonable
