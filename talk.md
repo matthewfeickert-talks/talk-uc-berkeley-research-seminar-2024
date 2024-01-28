@@ -26,7 +26,7 @@ January 31st, 2024
 .kol-2-3[
 .huge[
 * As a "data physicist" have privileged opportunity to work among multiple scientific communities
-* Care about .bold[reusable] open science to be able to push particle physics forward at the .bold[community scale]
+* Care about .bold[reusable] open science to be able to push the physical sciences forward at the .bold[community scale]
    - The challenges of the next decade provide wonderful research environments that will require interdisciplinary knowledge exchange to fully engage
 * Today I'll share .bold[high level] views of deeply .bold[technical problems]
 ]
@@ -134,7 +134,7 @@ January 31st, 2024
 <!--  -->
 .large[
 * Increase in data generating collision rate ("luminosity") of roughly order of magnitude
-   - Factor of .bold[20-25] times ($3$ - $4$ $\mathrm{ab}^{-1}$) the amount of collisions delivered from Run-2 of the LHC
+   - Factor of .bold[20-25] times the amount of collisions delivered from Run-2 of the LHC
 * Boon for measurements constrained by statistical uncertainties, searches for rare processes
 ]
 
@@ -175,9 +175,9 @@ January 31st, 2024
       <img src="assets/logos/logo_IRIS-HEP.png"; width=100%>
    </a>
 </p>
-.caption[Institute for Research and Innovation in Software for High Energy Physics (IRIS-HEP)
+.center.large[Institute for Research and Innovation in Software for High Energy Physics (IRIS-HEP)]
 
-supported by the National Science Foundation Cooperative Agreements [OAC-1836650](https://www.nsf.gov/awardsearch/showAward?AWD_ID=1836650) <br>and [PHY-2323298](https://www.nsf.gov/awardsearch/showAward?AWD_ID=2323298)
+.center[Supported by the National Science Foundation Cooperative Agreements <br>[OAC-1836650](https://www.nsf.gov/awardsearch/showAward?AWD_ID=1836650) and [PHY-2323298](https://www.nsf.gov/awardsearch/showAward?AWD_ID=2323298)
 ]
 ]
 
@@ -374,13 +374,13 @@ In [2022](https://indico.cern.ch/event/1140031/) we created a view for the PyHEP
 ]
 
 ---
-# Automatic differentiation as tool for physics
+# Automatic differentiation as tool for science
 
-.footnote[Taking a [slide](https://indico.ph.tum.de/event/7113/contributions/7705/) from Lukas Heinrich]
+<!-- .footnote[Taking a [slide](https://indico.ph.tum.de/event/7113/contributions/7705/) from Lukas Heinrich] -->
 
 .kol-1-2[
 <p style="text-align:center;">
-   <img src="figures/freeman-dyson.png"; width=60%>
+   <img src="figures/freeman-dyson.png"; width=65%>
 </p>
 ]
 .kol-1-2.huge[
@@ -391,11 +391,11 @@ In [2022](https://indico.cern.ch/event/1140031/) we created a view for the PyHEP
 ---
 # Gradients as Computational Tools
 
-- As we'll see later, having access to the gradient while performing minimization is highly beneficial!
+- As we'll see later, having access to the gradient while performing minimization is .bold[highly beneficial]!
 - Can imagine multiple ways of arriving at gradients for computational functions
-   - But want them to be both .bold[exact] and .bold[flexible]
+   <!-- - But want them to be both .bold[exact] and .bold[flexible] -->
 
-.center.width-25[![carbon_f_x](figures/carbon_f_x.png)]
+.center.width-30[![carbon_f_x](figures/carbon_f_x.png)]
 .kol-6-8[
 .bold.center[Symbolic]
 .center.width-100[![carbon_fprime_symbolic](figures/carbon_fprime_symbolic.png)]
@@ -409,11 +409,10 @@ In [2022](https://indico.cern.ch/event/1140031/) we created a view for the PyHEP
 ---
 # Gradients as Computational Tools
 
-- As we'll see later, having access to the gradient while performing minimization is highly beneficial!
+- As we'll see later, having access to the gradient while performing minimization is .bold[highly beneficial]!
 - Can imagine multiple ways of arriving at gradients for computational functions
-   - But want them to be both .bold[exact] and .bold[flexible]
 
-.center.width-25[![carbon_f_x](figures/carbon_f_x.png)]
+.center.width-30[![carbon_f_x](figures/carbon_f_x.png)]
 .kol-6-8[
 .bold.center[Numeric]
 .center.width-70[![carbon_fprime_numeric](figures/carbon_fprime_numeric.png)]
@@ -429,9 +428,8 @@ In [2022](https://indico.cern.ch/event/1140031/) we created a view for the PyHEP
 
 - As we'll see later, having access to the gradient while performing minimization is highly beneficial!
 - Can imagine multiple ways of arriving at gradients for computational functions
-   - But want them to be both .bold[exact] and .bold[flexible]
 
-.center.width-25[![carbon_f_x](figures/carbon_f_x.png)]
+.center.width-30[![carbon_f_x](figures/carbon_f_x.png)]
 .kol-6-8[
 .bold.center[Automatic]
 .center.width-80[![carbon_fprime_automatic](figures/carbon_fprime_automatic.png)]
@@ -459,6 +457,9 @@ $$
 $$
 \frac{df}{da} = \frac{\partial c}{\partial a} \frac{\partial f}{\partial c} + \frac{\partial d}{\partial a} \frac{\partial e}{\partial d} \frac{\partial f}{\partial e}
 $$
+$$
+= 2a \sin(ab) + a^{2}b \cos(ab)
+$$
 
 <!-- TODO: Revise example with graphviz -->
 ]
@@ -471,7 +472,7 @@ $$
 
 .grid[
 .kol-1-2.large[
-- Allows writing fully differentiable programs that are efficient and accurate
+- Allows writing fully differentiable programs that are .bold[efficient and accurate]
 - Resulting system can be optimized end-to-end using efficient gradient-based optimization algorithms
    - Exploit advances in deep learning
 - Enables .italic[efficient] computation of gradients and Jacobians
@@ -729,24 +730,6 @@ $$
 </p>
 ]
 ]
-
----
-# HEP Example: Likelihood Gradients
-
-.kol-1-2.center[
-<p style="text-align:center;">
-   <a href="https://indico.cern.ch/event/882824/timetable/#45-introduction-to-automatic-d">
-      <img src="figures/carbon_plot_MLE_grads.png"; width=85%>
-   </a>
-</p>
-]
-.kol-1-2.center[
-<p style="text-align:center;">
-   <img src="figures/MLE_grad_map_full.png"; width=90%>
-</p>
-]
-
-.bold.center[Having access to the gradients can make the fit orders of magnitude faster than finite difference]
 
 ---
 # HEP Example: Likelihood Gradients
