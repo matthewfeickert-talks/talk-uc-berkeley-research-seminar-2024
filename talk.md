@@ -709,37 +709,6 @@ $$
 .bold.center[Having access to the gradients can make the fit orders of magnitude faster than finite difference]
 
 ---
-# Moving towards differentiable workflows
-
-.kol-1-3[
-<p style="text-align:center;">
-   <img src="figures/signal_background_stacked.png"; width=100%>
-</p>
-* Counting experiment for presence of signal process
-* Place discriminate selection ("cut") on observable $x$ to maximize significance $S(x)$
-* Step along cut values in $x$ and calculate significance
-]
-.kol-1-3[
-<p style="text-align:center;">
-   <img src="figures/significance_scan_compare.png"; width=100%>
-</p>
-* Need differentiable analogue to non-differentiable cut
-* Weight events using activation function of sigmoid
-
-.center[$w=\left(1 + e^{-\alpha(x-c)}\right)^{-1}$]
-
-* Event far .italic[below] cut: $w \to 0$
-* Event far .italic[above] cut: $w \to 1$
-]
-.kol-1-3[
-<p style="text-align:center;">
-   <img src="figures/automated_optimization.png"; width=95%>
-</p>
-* With a simple gradient descent algorithm can easily automate the significance optimization
-* Allows for the "cut" to become a parameter that can be differentiated through for the larger analysis
-]
-
----
 # New Art: Analysis as a Differentiable Program
 
 <p style="text-align:center;">
@@ -1089,7 +1058,7 @@ Serve on Formation Task Force for the Coordinating Panel for Software and Comput
 ]
 .kol-1-3[
 <p style="text-align:center;">
-   <img src="figures/MLE_grad_map_full.png"; width=75%>
+   <img src="figures/MLE_grad_map.png"; width=75%>
 </p>
 ]
 
@@ -1245,7 +1214,6 @@ Mathematical grammar for a simultaneous fit with multiple disjoint _channels_ (o
 .center[Example: .bold[Each bin] is separate (1-bin) _channel_,<br> each .bold[histogram] (color) is a _sample_ and share<br> a .bold[normalization systematic] uncertainty]
 ]
 
-
 ---
 # HistFactory Template: systematic uncertainties
 
@@ -1265,6 +1233,37 @@ Mathematical grammar for a simultaneous fit with multiple disjoint _channels_ (o
 .kol-3-7[
 .center.width-70[[![systematics](figures/systematics.png)](https://indico.cern.ch/event/1076231/contributions/4560405/)]
 .center[Image credit: [Alex Held](https://indico.cern.ch/event/1076231/contributions/4560405/)]
+]
+
+---
+# Moving towards differentiable workflows
+
+.kol-1-3[
+<p style="text-align:center;">
+   <img src="figures/signal_background_stacked.png"; width=100%>
+</p>
+* Counting experiment for presence of signal process
+* Place discriminate selection ("cut") on observable $x$ to maximize significance $S(x)$
+* Step along cut values in $x$ and calculate significance
+]
+.kol-1-3[
+<p style="text-align:center;">
+   <img src="figures/significance_scan_compare.png"; width=100%>
+</p>
+* Need differentiable analogue to non-differentiable cut
+* Weight events using activation function of sigmoid
+
+.center[$w=\left(1 + e^{-\alpha(x-c)}\right)^{-1}$]
+
+* Event far .italic[below] cut: $w \to 0$
+* Event far .italic[above] cut: $w \to 1$
+]
+.kol-1-3[
+<p style="text-align:center;">
+   <img src="figures/automated_optimization.png"; width=95%>
+</p>
+* With a simple gradient descent algorithm can easily automate the significance optimization
+* Allows for the "cut" to become a parameter that can be differentiated through for the larger analysis
 ]
 
 ---
