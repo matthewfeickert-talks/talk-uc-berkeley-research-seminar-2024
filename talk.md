@@ -280,30 +280,6 @@ In [2022](https://indico.cern.ch/event/1140031/) we created a view for the PyHEP
 ]
 
 ---
-# Rapid rise of Python for analysis in HEP
-
-<p style="text-align:center;">
-   <a href="https://matthewfeickert.github.io/talk-doepy-python-exchange-2022/2022-06-29.pdf">
-      <img src="figures/github-language-fullstudy-for-review.svg"; width=85%>
-   </a>
-</p>
-.center.large["import XYZ" matches in GitHub repos for users who fork [CMSSW](https://github.com/cms-sw/cmssw) by file]
-
-.footnote[[Modern Python analysis ecosystem for High Energy Physics](https://matthewfeickert.github.io/talk-doepy-python-exchange-2022/2022-06-29.pdf), Jim Pivarski, Matthew Feickert, Gordon Watts]
-
----
-# Explosion of Scientific Python (NumPy, etc.)
-
-<p style="text-align:center;">
-   <a href="https://matthewfeickert.github.io/talk-doepy-python-exchange-2022/2022-06-29.pdf">
-      <img src="figures/github-package-fullstudy-for-review.svg"; width=85%>
-   </a>
-</p>
-.center.large["import XYZ" matches in GitHub repos for users who fork [CMSSW](https://github.com/cms-sw/cmssw) by library/tool]
-
-.footnote[[Modern Python analysis ecosystem for High Energy Physics](https://matthewfeickert.github.io/talk-doepy-python-exchange-2022/2022-06-29.pdf), Jim Pivarski, Matthew Feickert, Gordon Watts]
-
----
 # Community adoption ...
 
 <p style="text-align:center;">
@@ -426,7 +402,7 @@ In [2022](https://indico.cern.ch/event/1140031/) we created a view for the PyHEP
 ---
 # Gradients as Computational Tools
 
-- As we'll see later, having access to the gradient while performing minimization is highly beneficial!
+- As we'll see later, having access to the gradient while performing minimization is .bold[highly beneficial]!
 - Can imagine multiple ways of arriving at gradients for computational functions
 
 .center.width-30[![carbon_f_x](figures/carbon_f_x.png)]
@@ -541,29 +517,6 @@ Provide constraints on models through setting best limits
 # HistFactory Template: grammar
 
 $$
-f\left(\mathrm{data}\middle|\mathrm{parameters}\right) =  f\left(\textcolor{#00a620}{\vec{n}}, \textcolor{#a3130f}{\vec{a}}\middle|\textcolor{#0495fc}{\vec{\eta}}, \textcolor{#9c2cfc}{\vec{\chi}}\right) = \color{blue}{\prod\_{c \\,\in\\, \textrm{channels}} \prod\_{b \\,\in\\, \textrm{bins}\_c} \textrm{Pois} \left(n\_{cb} \middle| \nu\_{cb}\left(\vec{\eta}, \vec{\chi}\right)\right)} \\,\color{red}{\prod\_{\chi \\,\in\\, \vec{\chi}} c\_{\chi} \left(a\_{\chi}\middle|\chi\right)}
-$$
-
-Mathematical grammar for a simultaneous fit with multiple disjoint _channels_ (or regions) of binned distributions with multiple _samples_ contributing to each with additional (possibly shared) systematics between sample estimates
-
-.kol-1-2[
-.bold[Main pieces:]
-- .blue[Main Poisson p.d.f. for simultaneous measurement of multiple channels]
-- .katex[Event rates] $\nu\_{cb}(\textcolor{#0495fc}{\vec{\eta}}, \textcolor{#9c2cfc}{\vec{\chi}})$ (nominal rate $\nu\_{scb}^{0}$ with rate modifiers)
-- .red[Constraint p.d.f. (+ data) for "auxiliary measurements"]
-   - encode systematic uncertainties (e.g. normalization, shape)
-<!-- - $\vec{n}$: events, $\vec{a}$: auxiliary data, $\vec{\eta}$: unconstrained pars, $\vec{\chi}$: constrained pars -->
-- $\textcolor{#00a620}{\vec{n}}$: .obsdata[events], $\textcolor{#a3130f}{\vec{a}}$: .auxdata[auxiliary data], $\textcolor{#0495fc}{\vec{\eta}}$: .freepars[unconstrained pars], $\textcolor{#9c2cfc}{\vec{\chi}}$: .conpars[constrained pars]
-]
-.kol-1-2[
-.center.width-100[[![SUSY-2016-16_annotated](figures/SUSY-2016-16.png)](https://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/PAPERS/SUSY-2016-16/)]
-.center[Example: .bold[Each bin] is separate (1-bin) _channel_,<br> each .bold[histogram] (color) is a _sample_ and share<br> a .bold[normalization systematic] uncertainty]
-]
-
----
-# HistFactory Template: implementation
-
-$$
 f\left(\mathrm{data}\middle|\mathrm{parameters}\right) =  f\left(\textcolor{#00a620}{\vec{n}}, \textcolor{#a3130f}{\vec{a}}\middle|\textcolor{#0495fc}{\vec{\eta}}, \textcolor{#9c2cfc}{\vec{\chi}}\right) = \prod\_{c \\,\in\\, \textrm{channels}} \prod\_{b \\,\in\\, \textrm{bins}\_c} \textrm{Pois} \left(\textcolor{#00a620}{n\_{cb}} \middle| \nu\_{cb}\left(\textcolor{#0495fc}{\vec{\eta}}, \textcolor{#9c2cfc}{\vec{\chi}}\right)\right) \prod\_{\chi \\,\in\\, \vec{\chi}} c\_{\chi} \left(\textcolor{#a3130f}{a\_{\chi}}\middle|\textcolor{#9c2cfc}{\chi}\right)
 $$
 
@@ -573,10 +526,16 @@ $$
 \nu\_{cb}(\textcolor{#0495fc}{\vec{\eta}}, \textcolor{#9c2cfc}{\vec{\chi}}) = \sum\_{s \\,\in\\, \textrm{samples}} \underbrace{\left(\sum\_{\kappa \\,\in\\, \vec{\kappa}} \kappa\_{scb}(\textcolor{#0495fc}{\vec{\eta}}, \textcolor{#9c2cfc}{\vec{\chi}})\right)}\_{\textrm{multiplicative}} \Bigg(\nu\_{scb}^{0}(\textcolor{#0495fc}{\vec{\eta}}, \textcolor{#9c2cfc}{\vec{\chi}}) + \underbrace{\sum\_{\Delta \\,\in\\, \vec{\Delta}} \Delta\_{scb}(\textcolor{#0495fc}{\vec{\eta}}, \textcolor{#9c2cfc}{\vec{\chi}})}\_{\textrm{additive}}\Bigg)
 $$
 
-.center[.bold[This is a _mathematical_ representation!] Nowhere is any software spec defined]
+Mathematical grammar for a simultaneous fit with multiple disjoint _channels_ (or regions) of binned distributions with multiple _samples_ contributing to each with additional (possibly shared) systematics between sample estimates
+
+<!-- .center[.bold[This is a _mathematical_ representation!] Nowhere is any software spec defined] -->
 .center[.bold[Until 2018] the only implementation of HistFactory was in `C++` framework for physics analysis ([`ROOT`](https://root.cern.ch/))]
 
-.center.width-70[[![ROOT_HistFactory](figures/ROOT_HistFactory.png)](https://root.cern/doc/v628/group__HistFactory.html)]
+<p style="text-align:center;">
+   <a href="https://root.cern/doc/v628/group__HistFactory.html">
+      <img src="figures/ROOT_HistFactory.png"; width=55%>
+   </a>
+</p>
 
 ---
 # `pyhf`: HistFactory in pure Python
@@ -1165,6 +1124,30 @@ class: end-slide, center
 .center[[ATLAS](https://cds.cern.ch/record/2803119?ln=en) and [CMS](https://cds.cern.ch/record/2815292?ln=en) software and computing reviews]
 
 ---
+# Rapid rise of Python for analysis in HEP
+
+<p style="text-align:center;">
+   <a href="https://matthewfeickert.github.io/talk-doepy-python-exchange-2022/2022-06-29.pdf">
+      <img src="figures/github-language-fullstudy-for-review.svg"; width=85%>
+   </a>
+</p>
+.center.large["import XYZ" matches in GitHub repos for users who fork [CMSSW](https://github.com/cms-sw/cmssw) by file]
+
+.footnote[[Modern Python analysis ecosystem for High Energy Physics](https://matthewfeickert.github.io/talk-doepy-python-exchange-2022/2022-06-29.pdf), Jim Pivarski, Matthew Feickert, Gordon Watts]
+
+---
+# Explosion of Scientific Python (NumPy, etc.)
+
+<p style="text-align:center;">
+   <a href="https://matthewfeickert.github.io/talk-doepy-python-exchange-2022/2022-06-29.pdf">
+      <img src="figures/github-package-fullstudy-for-review.svg"; width=85%>
+   </a>
+</p>
+.center.large["import XYZ" matches in GitHub repos for users who fork [CMSSW](https://github.com/cms-sw/cmssw) by library/tool]
+
+.footnote[[Modern Python analysis ecosystem for High Energy Physics](https://matthewfeickert.github.io/talk-doepy-python-exchange-2022/2022-06-29.pdf), Jim Pivarski, Matthew Feickert, Gordon Watts]
+
+---
 # Automatic Differentiation: Forward and Reverse
 
 .center[Performing maps $f: \mathbb{R}^{m} \to \mathbb{R}^{n}$]
@@ -1238,6 +1221,30 @@ $$
 - .katex[Event rates] $\nu\_{cb}(\textcolor{#0495fc}{\vec{\eta}}, \textcolor{#9c2cfc}{\vec{\chi}})$ (nominal rate $\nu\_{scb}^{0}$ with rate modifiers)
    - encode systematic uncertainties (e.g. normalization, shape)
 - .red[Constraint p.d.f. (+ data) for "auxiliary measurements"]
+
+---
+# HistFactory Template: grammar
+
+$$
+f\left(\mathrm{data}\middle|\mathrm{parameters}\right) =  f\left(\textcolor{#00a620}{\vec{n}}, \textcolor{#a3130f}{\vec{a}}\middle|\textcolor{#0495fc}{\vec{\eta}}, \textcolor{#9c2cfc}{\vec{\chi}}\right) = \color{blue}{\prod\_{c \\,\in\\, \textrm{channels}} \prod\_{b \\,\in\\, \textrm{bins}\_c} \textrm{Pois} \left(n\_{cb} \middle| \nu\_{cb}\left(\vec{\eta}, \vec{\chi}\right)\right)} \\,\color{red}{\prod\_{\chi \\,\in\\, \vec{\chi}} c\_{\chi} \left(a\_{\chi}\middle|\chi\right)}
+$$
+
+Mathematical grammar for a simultaneous fit with multiple disjoint _channels_ (or regions) of binned distributions with multiple _samples_ contributing to each with additional (possibly shared) systematics between sample estimates
+
+.kol-1-2[
+.bold[Main pieces:]
+- .blue[Main Poisson p.d.f. for simultaneous measurement of multiple channels]
+- .katex[Event rates] $\nu\_{cb}(\textcolor{#0495fc}{\vec{\eta}}, \textcolor{#9c2cfc}{\vec{\chi}})$ (nominal rate $\nu\_{scb}^{0}$ with rate modifiers)
+- .red[Constraint p.d.f. (+ data) for "auxiliary measurements"]
+   - encode systematic uncertainties (e.g. normalization, shape)
+<!-- - $\vec{n}$: events, $\vec{a}$: auxiliary data, $\vec{\eta}$: unconstrained pars, $\vec{\chi}$: constrained pars -->
+- $\textcolor{#00a620}{\vec{n}}$: .obsdata[events], $\textcolor{#a3130f}{\vec{a}}$: .auxdata[auxiliary data], $\textcolor{#0495fc}{\vec{\eta}}$: .freepars[unconstrained pars], $\textcolor{#9c2cfc}{\vec{\chi}}$: .conpars[constrained pars]
+]
+.kol-1-2[
+.center.width-100[[![SUSY-2016-16_annotated](figures/SUSY-2016-16.png)](https://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/PAPERS/SUSY-2016-16/)]
+.center[Example: .bold[Each bin] is separate (1-bin) _channel_,<br> each .bold[histogram] (color) is a _sample_ and share<br> a .bold[normalization systematic] uncertainty]
+]
+
 
 ---
 # HistFactory Template: systematic uncertainties
