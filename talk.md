@@ -14,12 +14,12 @@ count: false
 
 January 31st, 2024
 
----
+<!-- ---
 # Notes
 
 * .bold[Time]: 45 minutes .bold[talk] + 5-10 minutes .bold[questions]
 * .bold[Prompt]: Research seminar focusing on past work. It will be open to faculty, students, other departments and a broader audience.
-* .bold[Abstract:] With the High-Luminosity Large Hadron Collider (HL-LHC) era on the horizon for physics analysis at the LHC experiments, there are multiple computing and data challenges to be overcome to efficiently analyze and extract the most scientific value from the unique and valuable data collected. In this seminar I will present a high-level overview of how applications of data science tools from the modern scientific open source community, techniques and applications from the field of automatic differentiation, and strategies for enabling analysis reuse can be leveraged to tackle scientific analysis at the HL-LHC scale and beyond.
+* .bold[Abstract:] With the High-Luminosity Large Hadron Collider (HL-LHC) era on the horizon for physics analysis at the LHC experiments, there are multiple computing and data challenges to be overcome to efficiently analyze and extract the most scientific value from the unique and valuable data collected. In this seminar I will present a high-level overview of how applications of data science tools from the modern scientific open source community, techniques and applications from the field of automatic differentiation, and strategies for enabling analysis reuse can be leveraged to tackle scientific analysis at the HL-LHC scale and beyond. -->
 
 ---
 # Introduction
